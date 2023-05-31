@@ -1,10 +1,7 @@
 .title {
-	font-family: 'Raleway';
-	font-style: normal;
 	font-weight: 400;
 	font-size: 49px;
 	line-height: 45px;
-	font-feature-settings: 'pnum' on, 'lnum' on;
 	color: $black;
 
 	@media screen and (max-width: 920px) {
@@ -14,12 +11,9 @@
 }
 
 .title-2 {
-	font-family: 'Raleway';
-	font-style: normal;
 	font-weight: 400;
 	font-size: 32px;
 	line-height: 38px;
-	font-feature-settings: 'pnum' on, 'lnum' on;
 	color: $black;
 
 	@media screen and (max-width: 920px) {
@@ -29,95 +23,106 @@
 }
 
 .title-3 {
-	font-family: 'Raleway';
-	font-style: normal;
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 28px;
-	font-feature-settings: 'pnum' on, 'lnum' on;
 	color: $black;
 }
 
 .title-4 {
-	font-family: 'Raleway';
-	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 23px;
-	font-feature-settings: 'pnum' on, 'lnum' on;
 	color: $black;
 }
 
 .title-4-bold {
-	font-family: 'Raleway';
-	font-style: normal;
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 23px;
-	font-feature-settings: 'pnum' on, 'lnum' on;
 	color: $black;
 }
 
 
 .text {
-	font-family: 'Raleway';
-	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
 	letter-spacing: 0.01em;
-	font-feature-settings: 'pnum' on, 'lnum' on;
 	color: $black;
 }
 
 .price {
-	font-family: 'Raleway';
-	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
-	font-feature-settings: 'pnum' on, 'lnum' on;
 	color: $black;
 }
 
 .brand {
-	font-family: 'Raleway';
-	font-style: normal;
 	font-weight: 300;
 	font-size: 16px;
-	line-height: 19px;font-feature-settings: 'pnum' on, 'lnum' on;
 	color: $black;
 }
 
 .button {
-	font-family: 'Raleway';
-	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 19px;
-	font-feature-settings: 'pnum' on, 'lnum' on;
 	color: $black;
 }
 
 .text-2 {
-	font-family: 'Raleway';
-	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
 	letter-spacing: 0.01em;
-	font-feature-settings: 'pnum' on, 'lnum' on;
 	color: $black;
 }
 
 .old-price {
-	font-family: 'Raleway';
-	font-style: normal;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 14px;
-	font-feature-settings: 'pnum' on, 'lnum' on;
 	color: $black;
+}
+
+.button-1 {
+	padding: 10px 28px 10px 28px;
+	background-color: $accent;
+	transition: all 300ms ease;
+	max-width: fit-content;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: $white;
+	border-width: 1px;
+	border-color: $accent;
+	border-style: solid;
+
+	&:hover {
+		background-color: $hover-accent;
+		border-color: $hover-accent;
+	}
+}
+
+.button-2 {
+	padding: 10px 28px 10px 28px;
+	background-color: $white;
+	transition: all 300ms ease;
+	max-width: fit-content;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: $accent;
+	border-width: 1px;
+	border-color: $accent;
+	border-style: solid;
+
+	&:hover {
+		background-color: $accent;
+	color: $white;
+	}
 }
 
 

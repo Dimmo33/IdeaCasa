@@ -1,8 +1,25 @@
 .layout {
-	max-width: 1160px;
 	margin-left: auto;
 	margin-right: auto;
+
+	@media screen and (max-width:1200px) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+
 
 body {
 	overflow-x: hidden;
