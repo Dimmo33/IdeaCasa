@@ -1,0 +1,44 @@
+.button-1 {
+	padding: 10px 28px 10px 28px;
+	background-color: $accent;
+	transition: all 300ms ease;
+	text-decoration: none;
+	max-width: fit-content;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: $white;
+	border-width: 1px;
+	border-color: $accent;
+	border-style: solid;
+}
+
+.button-1:hover {
+	background-color: $hover-accent;
+	border-color: $hover-accent;
+}
+
+.button-2 {
+	padding: 10px 28px 10px 28px;
+	background-color: $white;
+	transition: all 300ms ease;
+	text-decoration: none;
+	max-width: fit-content;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: $accent;
+	border-width: 1px;
+	border-color: $accent;
+	border-style: solid;
+}
+
+.button-2:hover {
+	background-color: $accent;
+	color: $white;
+}
+
