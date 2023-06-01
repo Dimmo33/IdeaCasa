@@ -1,0 +1,94 @@
+.contacts {
+	
+	&__address {
+		margin-top: 58px;
+		margin-bottom: 140px;
+	}
+
+	&__list {
+		list-style-type: none;
+		display: grid;
+		grid-template-columns: (1, 1fr);
+		grid-gap: 36px;
+
+		&-item {
+			list-style-type: none;
+			padding: 40px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: $gray2;
+
+			&-block {
+				list-style-type: none;
+				display: flex;
+				grid-template-columns: (1, 1fr);
+				grid-gap: 40px;
+
+				&-column {
+					list-style-type: none;
+					display: grid;
+					&-subtitle {
+						margin-bottom: 12px;
+						color: $accent;
+					}
+
+					&-text {
+						margin-bottom: 8px;
+					}
+
+					&-link {
+						margin-top: 14px;
+					}
+				}
+			}
+		}
+	}
+
+	&__service {
+		margin-top: 140px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		background-color: $accent;
+	}
+
+	&__requisites {
+		padding-top: 140px;
+		padding-bottom: 140px;
+		display: flex;
+
+		&-block {
+			list-style-type: none;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 40px;
+			&-1 {
+				min-width: 560px;
+			}
+	
+			&-2 {
+				padding-top: 10px;
+				display: grid;
+				
+				&-button {
+					color: $accent;
+					margin-bottom: 2px;
+				}
+
+				&-call {
+					margin-top: 16px;
+					margin-bottom: 40px;
+				}
+		
+				&-text {	
+					margin-bottom: 4px;
+				}
+	
+				&-subtitle {
+					margin-top: 22px;
+					margin-bottom: 8px;
+				}
+
+			}	
+		}
+	}
+}

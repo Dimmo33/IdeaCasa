@@ -1,0 +1,35 @@
+.section-text {
+	display: flex;
+
+	&__block {
+		list-style-type: none;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 40px;
+		&-1 {
+			min-width: 560px;
+		}
+
+		&-2 {
+			padding-top: 10px;
+			display: grid;
+			&-pic {
+				object-fit: contain;
+				width: 559px;
+				margin: 22px 0 22px 0;
+				&-img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			
+			&-text {
+				
+			}
+
+			&-email {
+				margin-top: 18px;
+			}
+		}	
+	}
+}
