@@ -1,11 +1,14 @@
 .thanks {
+	height: auto;
 
 	&__pic {
-		
-		&-img {
-			width: 100%;
-			height: 100%;
-		}
+		width: 100%;
+		// height: 100%;
+		height: 100vh;
+		// height: auto;
+		background-image: url('../images/thanks-poster.jpg');
+		background-size: 100%;
+		background-position: center;
 	}
 
 	&__block {
