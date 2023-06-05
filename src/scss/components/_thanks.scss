@@ -1,22 +1,24 @@
 .thanks {
-	height: auto;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url('../images/thanks-poster.jpg');
+	background-size: 100%;
+	background-position: center;
 
-	&__pic {
-		width: 100%;
-		// height: 100%;
-		height: 100vh;
-		// height: auto;
-		background-image: url('../images/thanks-poster.jpg');
-		background-size: 100%;
-		background-position: center;
+	&__container {
+		// position: absolute;
 	}
 
-	&__block {
-		
-		&-subtitle {
-			position: absolute;
-			bottom: 80px;
-			color: white;
-		}
+	&__title {
+		margin: 0;
+	}
+
+	&__text {
+		width: 493px;
+	}
+
+	&__button {
+		margin-top: 40px;
 	}
 }

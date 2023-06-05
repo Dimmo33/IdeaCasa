@@ -1,25 +1,61 @@
 .header {
-	display: flex;
 	
-	&__logo {
-		width: 82px;
-		height: 42px;
+	padding-top: 30px;
+	right: auto;
+	left: auto;
+	display: flex;
+	position: absolute;
+	z-index: 19;
+	width: 1160px;
+	&__layout-1 {
 
-		&-img {
-			width: 100%;
-			height: 100%;
+		width: 1160px;
+		position: relative;
+		display: flex;
+
+
+		&-logo {
+			margin-right: 30px;
+			&-pic {
+				
+				width: 82px;
+				height: 42px;
+				&-svg {
+					width: 100%;
+					height: 100%;
+				}
+			}
 		}
-	}
-
-	&__menu {
-		
-	}
-
-	&__call-number {
-
-	}
-
-	&__shopping-list {
-
-	}
+	
+		&-nav {
+			&-menu {
+				display: flex;
+				&-button {
+					margin-right: 30px;
+				}
+			}
+		}
+	
+		&-info {
+			position: absolute;
+			display: flex;
+			right: 0;
+			height: fit-content;
+			&-call {
+				// padding-top: 10px;
+				&-text {
+				}
+			}
+	
+	
+			&-pic {
+				width: 25px;
+				height: 25px;
+				&-svg {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}	
 }

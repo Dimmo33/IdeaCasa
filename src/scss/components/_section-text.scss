@@ -6,13 +6,27 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 40px;
+
+		@media screen and (max-width: 920px) {
+			grid-template-columns: repeat(1, 1fr);
+			grid-gap: 22px;
+		}
+
 		&-1 {
 			min-width: 560px;
+
+			@media screen and (max-width: 920px) {
+				min-width: auto;
+			}
 		}
 
 		&-2 {
 			padding-top: 10px;
 			display: grid;
+
+			@media screen and (max-width: 920px) {
+				padding-top: 0px;
+			}
 			&-pic {
 				object-fit: contain;
 				width: 559px;
@@ -30,10 +44,21 @@
 			&-email {
 				margin-top: 18px;
 			}
-		}	
+		}
 	}
 
 	&--var2 {
 		margin-bottom: 140px;
+
+		@media screen and (max-width: 920px) {
+			margin-bottom: 80px;
+		}
+	}
+
+	&--var3 {
+		margin-top: 140px;
+		@media screen and (max-width: 920px) {
+			margin-top: 80px;
+		}
 	}
 }
