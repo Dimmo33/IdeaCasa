@@ -1011,8 +1011,14 @@ ol {
     padding-right: 20px;
   }
 }
-.section-content__pic {
+.section-content-pic {
+  display: none;
   margin-top: 80px;
+}
+@media screen and (max-width: 920px) {
+  .section-content-pic {
+    display: block;
+  }
 }
 .section-content__block {
   margin-bottom: 40px;
