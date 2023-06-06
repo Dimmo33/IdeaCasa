@@ -1232,6 +1232,9 @@ ol {
 @media screen and (max-width: 920px) {
   .section-application__block-2-button {
     margin-top: 8px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 .delivery__box {
