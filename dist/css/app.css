@@ -127,6 +127,7 @@
 }
 
 .button-1 {
+  text-align: center;
   padding: 10px 28px 10px 28px;
   background-color: #9A8873;
   -webkit-transition: all 300ms ease;
@@ -146,8 +147,15 @@
   background-color: #766756;
   border-color: #766756;
 }
+@media screen and (max-width: 920px) {
+  .button-1 {
+    max-width: none;
+    width: 100%;
+  }
+}
 
 .button-2 {
+  text-align: center;
   padding: 10px 28px 10px 28px;
   background-color: #ffffff;
   -webkit-transition: all 300ms ease;
@@ -167,8 +175,17 @@
   background-color: #9A8873;
   color: #ffffff;
 }
+@media screen and (max-width: 920px) {
+  .button-2 {
+    max-width: none;
+    width: 100%;
+  }
+}
 
 .call-email {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
@@ -176,16 +193,13 @@
   color: #070605;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-  -webkit-text-decoration: underline 1px;
-          text-decoration: underline 1px;
-  -webkit-text-decoration-color: #070605;
-          text-decoration-color: #070605;
-  text-underline-position: under;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: #070605;
 }
 .call-email:hover {
   color: #9A8873;
-  -webkit-text-decoration-color: #9A8873;
-          text-decoration-color: #9A8873;
+  border-color: #9A8873;
 }
 
 .call-email-white {
@@ -196,16 +210,14 @@
   color: #ffffff;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-  -webkit-text-decoration: underline 1px;
-          text-decoration: underline 1px;
-  -webkit-text-decoration-color: #ffffff;
-          text-decoration-color: #ffffff;
-  text-underline-position: under;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: #ffffff;
 }
 .call-email-white:hover {
   color: #766756;
-  -webkit-text-decoration-color: #766756;
-          text-decoration-color: #766756;
+  border-color: #766756;
+  color: #766756;
 }
 
 .box {
@@ -968,19 +980,24 @@ ol {
 }
 .contacts__requisites-block-2-text {
   margin-bottom: 4px;
+  color: #070605;
 }
 .contacts__requisites-block-2-subtitle {
   margin-top: 22px;
   margin-bottom: 8px;
 }
 
-.thanks {
-  position: relative;
+.thanks__pic {
   width: 100%;
-  height: 100vh;
-  background-image: url(../images/thanks-poster.adbc37.jpg);
-  background-size: 100%;
-  background-position: center;
+  height: 100%;
+}
+.thanks__pic-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100%;
+     object-position: 100%;
 }
 .thanks__title {
   margin: 0;
