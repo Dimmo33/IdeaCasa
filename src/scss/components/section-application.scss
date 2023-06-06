@@ -1,13 +1,8 @@
 .section-application {
 	margin-top: 140px;
-	padding-top: 140px;
-	padding-bottom: 140px;
+	padding: 140px 0px 140px 0px;
 	background-color: $accent;
 	display: flex;
-
-	@media screen and (max-width: 920px) {
-		padding: 100px 25px 100px 25px;
-	}
 
 	&__block {
 		list-style-type: none;

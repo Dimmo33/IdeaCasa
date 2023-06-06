@@ -694,8 +694,6 @@ ol {
 @media screen and (max-width: 920px) {
   .poster__block-subtitle {
     bottom: 30px;
-    padding-right: 25px;
-    padding-left: 25px;
   }
 }
 
@@ -706,8 +704,8 @@ ol {
 }
 @media screen and (max-width: 920px) {
   .section-text {
-    padding-right: 45px;
-    padding-left: 45px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 .section-text__block {
@@ -776,8 +774,8 @@ ol {
 @media screen and (max-width: 920px) {
   .section-text--var2 {
     margin-bottom: 80px;
-    padding-right: 45px;
-    padding-left: 45px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 .section-text--var3 {
@@ -786,8 +784,8 @@ ol {
 @media screen and (max-width: 920px) {
   .section-text--var3 {
     margin-top: 80px;
-    padding-right: 45px;
-    padding-left: 45px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -918,8 +916,6 @@ ol {
     margin-top: 80px;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 24px;
-    padding-right: 24px;
   }
 }
 .contacts__requisites {
@@ -932,8 +928,6 @@ ol {
 @media screen and (max-width: 920px) {
   .contacts__requisites {
     padding-top: 80px;
-    padding-left: 24px;
-    padding-right: 24px;
   }
 }
 .contacts__requisites-block {
@@ -1013,8 +1007,8 @@ ol {
 }
 @media screen and (max-width: 920px) {
   .section-content {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 .section-content__pic {
@@ -1100,8 +1094,8 @@ ol {
 @media screen and (max-width: 920px) {
   .section-content-2 {
     margin-top: 80px;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 .section-content-2__block {
@@ -1155,17 +1149,11 @@ ol {
 
 .section-application {
   margin-top: 140px;
-  padding-top: 140px;
-  padding-bottom: 140px;
+  padding: 140px 0px 140px 0px;
   background-color: #9A8873;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-@media screen and (max-width: 920px) {
-  .section-application {
-    padding: 100px 25px 100px 25px;
-  }
 }
 .section-application__block {
   list-style-type: none;
