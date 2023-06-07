@@ -1,6 +1,13 @@
 .poster {
-	margin-bottom: 80px;
 	position: relative;
+
+	&-var1 {
+		margin-bottom: 80px;
+		
+	}
+	&-var2 {
+		margin-bottom: 40px;
+	}
 
 	@media screen and (max-width: 920px) {
 		margin-bottom: 40px;

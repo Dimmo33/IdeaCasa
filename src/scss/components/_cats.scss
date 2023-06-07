@@ -1,0 +1,8 @@
+.cats {
+	margin-bottom: 40px;
+	overflow-x: scroll;
+	white-space: nowrap;
+	&__button {
+		margin-right: 12px;
+	}
+}

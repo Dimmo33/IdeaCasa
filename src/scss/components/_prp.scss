@@ -1,0 +1,40 @@
+.prp {
+	position: relative;
+
+	&__pic {
+		max-width: 360px;
+		border-width: 0px 0px 1px 0px;
+		border-color: $black;
+		border-style: solid;
+		margin-bottom: 18px;
+
+		@media screen and (max-width: 600px) {
+			max-width: 100%;
+
+		}
+
+		&-img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__text {
+		position: relative;
+
+		&-brand {
+			margin-bottom: 3px;
+			color: $accent;
+		}
+
+		&-subtitle {
+			
+		}
+
+		&-price {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+	}
+}
