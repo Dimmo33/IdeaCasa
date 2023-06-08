@@ -1,17 +1,26 @@
 .poster {
 	position: relative;
 
-	&-var1 {
-		margin-bottom: 80px;
-		
-	}
-	&-var2 {
-		margin-bottom: 40px;
-	}
-
 	@media screen and (max-width: 920px) {
 		margin-bottom: 40px;
 	}
+
+	&-var1 {
+		margin-bottom: 80px;
+		
+		@media screen and (max-width: 920px) {
+			margin-bottom: 40px;
+		}
+	}
+	&-var2 {
+		margin-bottom: 40px;
+
+		@media screen and (max-width: 920px) {
+			margin-bottom: 22px;
+		}
+	}
+
+	
 
 	&__pic {
 		max-width: 100%;

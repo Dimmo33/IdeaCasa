@@ -14,7 +14,7 @@
 
 		@media screen and (max-width: 920px) {
 			grid-template-columns: repeat(1, 1fr);
-			grid-gap: 22px;
+			grid-gap: 12px;
 		}
 
 		&-1 {
@@ -40,7 +40,7 @@
 				@media screen and (max-width: 920px) {
 					min-height: 222px;
 					width: auto;
-					margin: 22px 0 12px 0;
+					margin: 32px 0 12px 0;
 				}
 
 				&-img {

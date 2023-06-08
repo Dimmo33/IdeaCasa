@@ -8,9 +8,9 @@
 		border-style: solid;
 		margin-bottom: 18px;
 
-		@media screen and (max-width: 600px) {
+		@media screen and (max-width: 920px) {
 			max-width: 100%;
-
+			margin-bottom: 14px;
 		}
 
 		&-img {
@@ -25,6 +25,10 @@
 		&-brand {
 			margin-bottom: 3px;
 			color: $accent;
+
+			@media screen and (max-width: 920px) {
+				margin-bottom: 4px;
+			}
 		}
 
 		&-subtitle {

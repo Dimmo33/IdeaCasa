@@ -1,5 +1,5 @@
 .section-text-2 {
-
+	margin-top: 40px;
 	&__block {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
@@ -9,6 +9,13 @@
 			grid-template-columns: repeat(1, 1fr);
 		}
 		&-1 {
+			&-subtitle {
+				margin-bottom: 22px;
+			}
+
+			&-text {
+				margin-bottom: 12px;
+			}
 		}
 
 		&-2 {

@@ -1,8 +1,20 @@
 .cats {
 	margin-bottom: 40px;
-	overflow-x: scroll;
 	white-space: nowrap;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	scrollbar-width: none;
+
+	@media screen and (max-width: 920px) {
+		margin-bottom: 22px;
+	}
+
 	&__button {
 		margin-right: 12px;
+
+		@media screen and (max-width: 920px) {
+			margin-right: 5px;
+		}
 	}
 }

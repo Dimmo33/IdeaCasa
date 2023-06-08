@@ -1,22 +1,18 @@
 .pagination {
-	text-align: center;
+	position: relative;
 	margin-top: 80px;
 	margin-bottom: 22px;
 	display: flex;
-	padding-left: auto;
-	padding-right: auto;
-	width: 100%;
-	
+  justify-content: center;
+
 	&__item {
 		margin-right: 16px;
+		
 		&-link {
-
-
+		
+			&:hover:not(.active) {
+				color: $accent;
+			}
 		}
 	}
-}
-
-
-.pagination__item-link.active {
-
 }
