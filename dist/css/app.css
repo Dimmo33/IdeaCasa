@@ -1769,7 +1769,7 @@ ol {
   position: relative;
   width: 100%;
   margin-top: 116px;
-  overflow-x: hidden;
+  height: 100%;
 }
 @media screen and (max-width: 920px) {
   .page-404 {
@@ -1801,31 +1801,30 @@ ol {
 }
 @media screen and (max-width: 1400px) {
   .page-404__pic {
+    width: 100%;
     right: -200px;
   }
 }
 @media screen and (max-width: 1100px) {
   .page-404__pic {
-    max-width: 600px;
-    right: 0px;
-    top: 200px;
+    right: -210px;
+    top: 100px;
   }
 }
 @media screen and (max-width: 920px) {
   .page-404__pic {
-    max-width: 600px;
-    right: 0px;
-    top: 300px;
+    right: -50p;
+    top: 280px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .page-404__pic {
-    right: -100px;
+    right: 0;
   }
 }
 @media screen and (max-width: 480px) {
   .page-404__pic {
-    width: 474px;
+    top: 310px;
   }
 }
 .page-404__pic-img {
@@ -1856,6 +1855,7 @@ ol {
 }
 @media screen and (max-width: 720px) {
   .page-404__content-text {
+    width: 100%;
     margin-bottom: 450px;
   }
 }

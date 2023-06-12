@@ -2,7 +2,7 @@
 	position: relative;
 	width: 100%;
 	margin-top: 116px;
-	overflow-x: hidden;
+	height: 100%;
 	
 	@media screen and (max-width: 920px) {
 		margin-top: 0	;
@@ -30,28 +30,26 @@
 		max-width: 920px;
 
 		@media screen and (max-width: 1400px) {
+			width: 100%;
 			right: -200px;
 		}
 
 		@media screen and (max-width: 1100px) {
-			max-width: 600px;
-			right: 0px;
-			top: 200px;
+			right: -210px;
+			top: 100px;
 		}
 
 		@media screen and (max-width: 920px) {
-			max-width: 600px;
-			right: 0px;
-			top: 300px;
+			right: -50p;
+			top: 280px;
 		}
 
-		@media screen and (max-width: 600px) {
-			right: -100px;
-
+		@media screen and (max-width: 720px) {
+			right: 0;
 		}
 
 		@media screen and (max-width: 480px) {
-			width: 474px;
+			top: 310px;
 		}
 
 		&-img {
@@ -86,6 +84,7 @@
 			margin-bottom: 50px;
 
 			@media screen and (max-width: 720px) {
+				width: 100%;
 				margin-bottom: 450px;
 			}
 
