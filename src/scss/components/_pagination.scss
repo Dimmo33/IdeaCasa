@@ -3,15 +3,25 @@
 	margin-top: 80px;
 	margin-bottom: 22px;
 	display: flex;
+	margin-left: auto;
+	margin-right: auto;
   justify-content: center;
+	display: grid;
+	width: 163px;
+	grid-template-columns: repeat(7, 1fr);
+	grid-gap: 16px;
 
 	&__item {
-		margin-right: 16px;
+		// margin-right: 16px;
 		
 		&-link {
 		
 			&:hover:not(.active) {
 				color: $accent;
+			}
+
+			&-active {
+				color: $hover-accent;
 			}
 		}
 	}

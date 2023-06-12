@@ -1,0 +1,66 @@
+.ordering {
+	margin-top: 80px;
+
+	@media screen and (max-width: 920px) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	&__block {
+		list-style-type: none;
+		margin-bottom: 40px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 35px;
+
+		@media screen and (max-width: 920px) {
+			grid-template-columns: repeat(1, 1fr);
+			grid-gap: 12px;
+			margin-bottom: 22px;
+		}
+
+		&-1 {
+			display: flex;
+			min-width: 760px;
+
+			@media screen and (max-width: 920px) {
+				min-width: auto;
+			}
+
+		&-2 {
+			margin-top: 18px;
+
+			@media screen and (max-width: 920px) {
+				display: block;
+				width: 100%;
+
+			}
+		}
+	}
+
+	@media screen and (max-width: 920px) {
+			margin-top: 40px;
+		}
+	}
+
+	&__delivery {
+		width: 100%;
+
+		&-list {
+			width: 100%;
+			display: flex;
+			grid-template-columns: repeat(3, 1fr);
+
+			&-item {
+				padding: 16px 14px 16px 22px;
+				width: 100%;
+				border: 1px solid $accent;
+				
+				&-content {
+					width: 100%;
+					display: block;
+				}
+			}
+		}
+	}
+}

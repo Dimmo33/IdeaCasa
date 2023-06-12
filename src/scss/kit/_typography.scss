@@ -39,6 +39,19 @@
 		font-size: 32px;
 		line-height: 38px;
 	}
+
+	&-var2 {
+		font-weight: 300;
+		font-size: 32px;
+		line-height: 38px;
+		color: $black;
+
+		@media screen and (max-width: 380px) {
+			font-size: 28px;
+			line-height: 38px;
+		}
+	}
+
 }
 
 .title-3 {
@@ -291,6 +304,9 @@
 	}
 }
 
+.accent-color {
+	color: $accent;
+}
 
 
 

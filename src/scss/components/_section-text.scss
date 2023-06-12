@@ -12,9 +12,10 @@
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 40px;
 
-		@media screen and (max-width: 920px) {
+		@media screen and (max-width: 1200px) {
 			grid-template-columns: repeat(1, 1fr);
 			grid-gap: 12px;
+			
 		}
 
 		&-1 {
@@ -37,7 +38,15 @@
 				width: 559px;
 				margin: 22px 0 22px 0;
 
+				@media screen and (max-width: 1200px) {
+					max-height: 500px;
+					min-height: 222px;
+					width: auto;
+					
+				}
+
 				@media screen and (max-width: 920px) {
+					max-height: 400px;
 					min-height: 222px;
 					width: auto;
 					margin: 32px 0 12px 0;
@@ -46,15 +55,17 @@
 				&-img {
 					width: 100%;
 					height: 100%;
-
+					object-fit: cover;
+					
 					@media screen and (max-width: 390px) {
 						object-fit: cover;
+						object-position: 80% 10%;
 					}
 				}
 			}
 			
 			&-text {
-				
+				margin-bottom: 10px;
 			}
 
 			&-email {
@@ -62,6 +73,24 @@
 
 				@media screen and (max-width: 920px) {
 					margin-top: 22px;
+				}
+			}
+
+			&-link {
+				width: fit-content;
+				color: $accent;
+				transition: all 300ms ease;
+				margin-top: 12px;
+				border-bottom: 1px;
+				border-top: 0;
+				border-left: 0;
+				border-right: 0;
+				border-style: solid;
+				border-color: $accent;
+
+				&:hover {
+					color: $hover-accent;
+					border-color: $hover-accent;
 				}
 			}
 		}
