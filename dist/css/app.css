@@ -1769,6 +1769,7 @@ ol {
   position: relative;
   width: 100%;
   margin-top: 116px;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 920px) {
   .page-404 {
