@@ -1826,7 +1826,6 @@ ol {
   display: flex;
   background-color: #ffffff;
   border: none;
-  margin-right: 40px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
