@@ -12,7 +12,46 @@
 	grid-gap: 16px;
 
 	&__item {
-		// margin-right: 16px;
+
+		&-btn {
+			align-items: center;
+			display: flex;
+			background-color: $white;
+			border: none;
+			margin-right: 40px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			
+			&-text {
+				transition: color 0.3s ease;
+			}
+	
+			&-svg path {
+				transition: stroke 0.3s ease;
+			}
+	
+			&:hover &-text {
+				color: $accent;
+			}
+	
+			&:hover &-svg path {
+				stroke: $accent;
+			}
+	
+			&--icon-right  &-svg {
+				margin-left: 12px;
+				margin-right: 0;
+			}
+	
+			&--icon-right {
+	
+				@media screen and (max-width: 920px) {
+					position: absolute;
+					right: 0;
+					bottom: 0;
+				}
+			}
+		}
 		
 		&-link {
 		
