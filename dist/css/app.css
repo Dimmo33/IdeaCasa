@@ -2228,11 +2228,9 @@ ol {
     max-width: 100%;
     height: auto;
     border-color: #E3E3E3;
-    border-top: 1px;
     border-bottom: 0px;
     border-right: 0px;
     border-left: 0px;
-    border-style: solid;
   }
 }
 .map__card-title {
