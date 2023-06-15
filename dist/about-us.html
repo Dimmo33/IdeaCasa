@@ -13,11 +13,13 @@
 
 <body>
 	<div class="page">
-		<header class="header">
+		<header class="header js-header">
 			<div class="header__body layout">
 				<div class="header__logo">
 					<img class="header__logo-svg" src="/images/logo-white.svg" alt="">
 				</div>
+
+
 				<div class="header__menu">
 					<div class="header__mobile js-header-mobile">
 						<nav class="header__nav">
@@ -26,7 +28,7 @@
 									<a class="header__list-item-button text-white" href="#">Главная</a>
 								</li>
 								<li class="header__list-item">
-									<a class="header__list-item-button text-white" href="#">Каталог</a>
+									<a class="header__list-item-button text-white js-header-menu-toggle">Каталог</a>
 								</li>
 								<li class="header__list-item">
 									<a class="header__list-item-button text-white" href="#">О нас</a>
@@ -52,33 +54,202 @@
 					<a class="header__info-pic" href="#"><img class="header__info-pic-svg" src="/images/header-pic-white.svg" alt=""></a>
 				</div>
 			</div>
+
+
+			
 			<div class="header__bottom">
 				<div class="header__bottom-content layout">
 					<div class="header__bottom-menu">
 						<ul class="header__bottom-menu-list">
 							<li class="header__bottom-menu-list-item">
-								<a class="header__bottom-menu-list-item-button text-hover-acc" href="#">Спальня</a>
+								<button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
+									Спальня
+								</button>
 							</li>
 							<li class="header__bottom-menu-list-item">
-								<a class="header__bottom-menu-list-item-button text-hover-acc" href="#">Гостиная</a>
+								<button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
+									Гостиная
+								</button>
 							</li>
 							<li class="header__bottom-menu-list-item">
-								<a class="header__bottom-menu-list-item-button text-hover-acc" href="#">Кухня</a>
+								<button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
+									Кухня
+								</button>
 							</li>
 							<li class="header__bottom-menu-list-item">
-								<a class="header__bottom-menu-list-item-button text-hover-acc" href="#">Для дома</a>
+								<button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
+									Для дома
+								</button>
 							</li>
 							<li class="header__bottom-menu-list-item">
-								<a class="header__bottom-menu-list-item-button text-hover-acc" href="#">Детская мебель</a>
+								<button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
+									Детская мебель
+								</button>
 							</li>
 							<li class="header__bottom-menu-list-item">
-								<a class="header__bottom-menu-list-item-button text-hover-acc" href="#">Декор</a>
+								<button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
+									Декор
+								</button>
 							</li>
 						</ul>
 					</div>
+					<div class="header__bottom-wrapper js-header-cards">
+						<div class="header__bottom-cards">
+							<h2 class="header__bottom-cards-subtitle title-2">
+								Спальня
+							</h2>
+							<ul class="header__bottom-cards-list">
+								<li class="header__bottom-cards-list-item">
+									<div class="header__bottom-cards-pic">
+										<img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-1.jpg" alt="">
+									</div>
+									<p class="header__bottom-cards-text text">
+										Столы
+									</p>
+								</li>
+								<li class="header__bottom-cards-list-item">
+									<div class="header__bottom-cards-pic">
+										<img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-2.jpg" alt="">
+									</div>
+									<p class="header__bottom-cards-text text">
+										Стулья
+									</p>
+								</li>
+								<li class="header__bottom-cards-list-item">
+									<div class="header__bottom-cards-pic">
+										<img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-3.jpg" alt="">
+									</div>
+									<p class="header__bottom-cards-text text">
+										Кухонные островки
+									</p>
+								</li>
+								<li class="header__bottom-cards-list-item">
+									<div class="header__bottom-cards-pic-line">
+									</div>
+									<p class="header__bottom-cards-text text">
+										Смотреть все
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div class="header__bottom-cards">
+							<h2 class="header__bottom-cards-subtitle title-2">
+								Гостиная
+							</h2>
+							<ul class="header__bottom-cards-list">
+								<li class="header__bottom-cards-list-item">
+									<div class="header__bottom-cards-pic">
+										<img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-1.jpg" alt="">
+									</div>
+									<p class="header__bottom-cards-text text">
+										Столы
+									</p>
+								</li>
+								<li class="header__bottom-cards-list-item">
+									<div class="header__bottom-cards-pic">
+										<img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-2.jpg" alt="">
+									</div>
+									<p class="header__bottom-cards-text text">
+										Стулья
+									</p>
+								</li>
+								<li class="header__bottom-cards-list-item">
+									<div class="header__bottom-cards-pic">
+										<img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-3.jpg" alt="">
+									</div>
+									<p class="header__bottom-cards-text text">
+										Кухонные островки
+									</p>
+								</li>
+								<li class="header__bottom-cards-list-item">
+									<div class="header__bottom-cards-pic-line">
+									</div>
+									<p class="header__bottom-cards-text text">
+										Смотреть все
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div class="header__bottom-cards active">
+							<h2 class="header__bottom-cards-subtitle title-2">
+								Кухня
+							</h2>
+							<ul class="header__bottom-cards-list">
+								<li class="header__bottom-cards-list-item">
+									<div class="header__bottom-cards-pic">
+										<img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-1.jpg" alt="">
+									</div>
+									<p class="header__bottom-cards-text text">
+										Столы
+									</p>
+								</li>
+								<li class="header__bottom-cards-list-item">
+									<div class="header__bottom-cards-pic">
+										<img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-2.jpg" alt="">
+									</div>
+									<p class="header__bottom-cards-text text">
+										Стулья
+									</p>
+								</li>
+								<li class="header__bottom-cards-list-item">
+									<div class="header__bottom-cards-pic">
+										<img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-3.jpg" alt="">
+									</div>
+									<p class="header__bottom-cards-text text">
+										Кухонные островки
+									</p>
+								</li>
+								<li class="header__bottom-cards-list-item">
+									<div class="header__bottom-cards-pic-line">
+									</div>
+									<p class="header__bottom-cards-text text">
+										Смотреть все
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div class="header__bottom-cards">
+							<h2 class="header__bottom-cards-subtitle title-2">
+								Для дома
+							</h2>
+							<ul class="header__bottom-cards-list">
+								<li class="header__bottom-cards-list-item">
+									<div class="header__bottom-cards-pic">
+										<img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-1.jpg" alt="">
+									</div>
+									<p class="header__bottom-cards-text text">
+										Столы
+									</p>
+								</li>
+								<li class="header__bottom-cards-list-item">
+									<div class="header__bottom-cards-pic">
+										<img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-2.jpg" alt="">
+									</div>
+									<p class="header__bottom-cards-text text">
+										Стулья
+									</p>
+								</li>
+								<li class="header__bottom-cards-list-item">
+									<div class="header__bottom-cards-pic">
+										<img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-3.jpg" alt="">
+									</div>
+									<p class="header__bottom-cards-text text">
+										Кухонные островки
+									</p>
+								</li>
+								<li class="header__bottom-cards-list-item">
+									<div class="header__bottom-cards-pic-line">
+									</div>
+									<p class="header__bottom-cards-text text">
+										Смотреть все
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
 					<div class="header__bottom-cards">
 						<h2 class="header__bottom-cards-subtitle title-2">
-							Кухня
+							Детская мебель
 						</h2>
 						<ul class="header__bottom-cards-list">
 							<li class="header__bottom-cards-list-item">
@@ -113,12 +284,50 @@
 								</p>
 							</li>
 						</ul>
-						<button class="header__bottom-cards-button">
-							<div class="header__bottom-cards-button-pic">
-								<img class="header__bottom-cards-button-pic-svg" src="/images/header-x.svg" alt="">
-							</div>
-						</button>
 					</div>
+					<div class="header__bottom-cards">
+						<h2 class="header__bottom-cards-subtitle title-2">
+							Декор
+						</h2>
+						<ul class="header__bottom-cards-list">
+							<li class="header__bottom-cards-list-item">
+								<div class="header__bottom-cards-pic">
+									<img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-1.jpg" alt="">
+								</div>
+								<p class="header__bottom-cards-text text">
+									Столы
+								</p>
+							</li>
+							<li class="header__bottom-cards-list-item">
+								<div class="header__bottom-cards-pic">
+									<img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-2.jpg" alt="">
+								</div>
+								<p class="header__bottom-cards-text text">
+									Стулья
+								</p>
+							</li>
+							<li class="header__bottom-cards-list-item">
+								<div class="header__bottom-cards-pic">
+									<img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-3.jpg" alt="">
+								</div>
+								<p class="header__bottom-cards-text text">
+									Кухонные островки
+								</p>
+							</li>
+							<li class="header__bottom-cards-list-item">
+								<div class="header__bottom-cards-pic-line">
+								</div>
+								<p class="header__bottom-cards-text text">
+									Смотреть все
+								</p>
+							</li>
+						</ul>
+					</div>
+					<button class="header__bottom-cards-btn js-header-bottom-btn">
+						<div class="header__bottom-cards-btn-pic">
+							<img class="header__bottom-cards-btn-pic-svg" src="/images/header-x.svg" alt="">
+						</div>
+					</button>
 				</div>
 			</div>
 		</header>

@@ -76,12 +76,6 @@
 				}
 			}
 
-
-
-
-
-
-
 			&-link {
 				color: $accent;
 				transition: all 300ms ease;
@@ -92,11 +86,10 @@
 				&:hover {
 					color: $hover-accent;
 				}
-				
+			}
 
-				@media screen and (max-width: 540px) {
-					// display: none;
-				}
+			&-btn {
+				margin-top: 12px;	
 			}
 		}
 	}

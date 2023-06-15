@@ -1,0 +1,113 @@
+.map {
+	position: relative;
+	margin-top: 80px;
+	margin-bottom: 140px;
+
+	@media screen and (max-width: 920px) {
+		margin-top: 420px;
+		margin-bottom: 80px;
+	}
+
+	@media screen and (max-width: 600px) {
+		margin-top: 440px;
+	}
+
+	@media screen and (max-width: 410px) {
+		margin-top: 460px;
+	}
+
+	&__body {
+		position: relative;
+		width: 100%;
+		height: 750px;
+		z-index: 0;
+
+		@media screen and (max-width: 920px) {
+			height: 455px;
+		}
+	}
+
+	&__frame {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		top: 0;
+	}
+
+	&__content {
+		padding-top: 120px;
+		position: relative;
+		
+		@media screen and (max-width: 920px) {
+			padding-top: 0;
+			top: -420px;
+		}
+		@media screen and (max-width: 600px) {
+			top: -440px;
+		}
+
+		@media screen and (max-width: 410px) {
+			top: -460px;
+		}
+	}
+
+	&__card {
+		padding: 40px;
+		width: 360px;
+		height: 246px;
+		position: relative;
+		border: 1px solid $white;
+		background-color: $white;
+		z-index: 1;
+		margin-bottom: 20px;
+
+		@media screen and (max-width: 920px) {
+			padding: 40px 0px 22px 0px;
+			margin-bottom: 0;
+			width: 100%;
+			max-width: 100%;
+			height: auto;
+		}
+
+		&--bottom {
+
+			@media screen and (max-width: 920px) {
+				padding: 22px 0px 40px 0px;
+				margin-bottom: 0;
+				width: 100%;
+				max-width: 100%;
+				height: auto;
+				
+				border-color: $gray2;
+				border-top: 1px;
+				border-bottom: 0px;
+				border-right: 0px;
+				border-left: 0px;
+				border-style: solid;
+			}
+		}
+
+		&-title {
+			margin-bottom: 12px;
+		}
+
+		&-text {
+			margin-bottom: 8px;
+		}
+		
+		&-btn {
+			color: $accent;
+			background-color: transparent;
+			border: none;
+			margin-top: 20px;
+			cursor: pointer;
+			transition: color 0.3s ease;
+
+			&:hover {
+				color: $hover-accent;
+			}
+		}
+	}
+}
+
