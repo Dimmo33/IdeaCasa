@@ -37,17 +37,24 @@ header.addEventListener('click', (event) =>{
 		}
 });
 
-headerCats.forEach((item) => {
-	console.log(item)
-	item.addEventListener('click', () => {
+headerCats.forEach((item, index) => {
+	console.log(item, index)
+	item.addEventListener('mouseover', () => {
 		headerCats.forEach((clearItem) => {
 			if (clearItem.classList.contains("active")) {
 				clearItem.classList.remove("active")
 			}
 		})
 		item.classList.add("active")
+		console.log(headerCards[index])
+		headerCards.forEach((clearItem) => {
+			if (clearItem.classList.contains("active")) {
+				clearItem.classList.remove("active")
+			}
+		})
+			headerCards[index].classList.add("active")
 	});
-});
 
+});
 
 
