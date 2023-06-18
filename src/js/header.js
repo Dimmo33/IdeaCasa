@@ -11,7 +11,6 @@ const headerCards = document.querySelectorAll(".js-header-cards")
 
 
 
-
 window.addEventListener('scroll', function () {
     if (window.scrollY > 100) {
         header.classList.add("scrolled");
@@ -56,5 +55,6 @@ headerCats.forEach((item, index) => {
 	});
 
 });
+
 
 
