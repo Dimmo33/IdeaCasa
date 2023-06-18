@@ -2151,18 +2151,18 @@ ol {
 }
 @media screen and (max-width: 920px) {
   .map {
-    margin-top: 420px;
+    margin-top: 460px;
     margin-bottom: 80px;
   }
 }
 @media screen and (max-width: 600px) {
   .map {
-    margin-top: 440px;
+    margin-top: 480px;
   }
 }
 @media screen and (max-width: 410px) {
   .map {
-    margin-top: 460px;
+    margin-top: 500px;
   }
 }
 .map__body {
@@ -2183,6 +2183,7 @@ ol {
   height: 100%;
   overflow: hidden;
   top: 0;
+  z-index: 3;
 }
 .map__frame.active {
   display: block;
@@ -2190,6 +2191,7 @@ ol {
 .map__content {
   padding-top: 120px;
   position: relative;
+  z-index: 2;
 }
 @media screen and (max-width: 920px) {
   .map__content {
@@ -2214,34 +2216,19 @@ ol {
   position: relative;
   border: 1px solid #ffffff;
   background-color: #ffffff;
-  z-index: 1;
+  z-index: 8;
   margin-bottom: 20px;
 }
 .map__card.active {
-  border-color: #9A8873;
-  border-width: 1px;
-  border-style: solid;
+  border: 1px solid #9A8873;
 }
 @media screen and (max-width: 920px) {
   .map__card {
-    padding: 40px 0px 22px 0px;
-    margin-bottom: 0;
+    padding: 20px 20px 20px 20px;
     width: 100%;
     max-width: 100%;
     height: auto;
-  }
-}
-@media screen and (max-width: 920px) {
-  .map__card--bottom {
-    padding: 22px 0px 40px 0px;
-    margin-bottom: 0;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-color: #E3E3E3;
-    border-bottom: 0px;
-    border-right: 0px;
-    border-left: 0px;
+    border: 1px solid #E3E3E3;
   }
 }
 .map__card-title {

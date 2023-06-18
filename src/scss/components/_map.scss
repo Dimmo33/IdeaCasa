@@ -4,16 +4,16 @@
 	margin-bottom: 140px;
 
 	@media screen and (max-width: 920px) {
-		margin-top: 420px;
+		margin-top: 460px;
 		margin-bottom: 80px;
 	}
 
 	@media screen and (max-width: 600px) {
-		margin-top: 440px;
+		margin-top: 480px;
 	}
 
 	@media screen and (max-width: 410px) {
-		margin-top: 460px;
+		margin-top: 500px;
 	}
 
 	&__body {
@@ -34,6 +34,7 @@
 		height: 100%;
 		overflow: hidden;
 		top: 0;
+		z-index: 3;
 
 		&.active {
 			display: block;
@@ -43,6 +44,7 @@
 	&__content {
 		padding-top: 120px;
 		position: relative;
+		z-index: 2;
 		
 		@media screen and (max-width: 920px) {
 			padding-top: 0;
@@ -64,36 +66,19 @@
 		position: relative;
 		border: 1px solid $white;
 		background-color: $white;
-		z-index: 1;
+		z-index: 8;
 		margin-bottom: 20px;
 
 		&.active {
-			border-color: $accent;
-			border-width: 1px;
-			border-style: solid;
+			border: 1px solid $accent;
 		}
 
 		@media screen and (max-width: 920px) {
-			padding: 40px 0px 22px 0px;
-			margin-bottom: 0;
+			padding: 20px 20px 20px 20px;
 			width: 100%;
 			max-width: 100%;
 			height: auto;
-		}
-
-		&--bottom {
-
-			@media screen and (max-width: 920px) {
-				padding: 22px 0px 40px 0px;
-				margin-bottom: 0;
-				width: 100%;
-				max-width: 100%;
-				height: auto;
-				border-color: $gray2;
-				border-bottom: 0px;
-				border-right: 0px;
-				border-left: 0px;
-			}
+			border: 1px solid $gray2;
 		}
 
 		&-title {
