@@ -707,6 +707,11 @@ ol {
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 0 20px;
+  }
+}
 .header.scrolled {
   background-color: #ffffff;
 }
@@ -735,23 +740,45 @@ ol {
 .header__body {
   position: relative;
   padding-top: 30px;
+  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  height: 102px;
   -webkit-transition: -webkit-filter 0.3s ease;
   transition: -webkit-filter 0.3s ease;
   transition: filter 0.3s ease;
   transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media screen and (max-width: 920px) {
+  .header__body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 .header__logo {
-  padding-right: 78px;
+  margin-right: 78px;
   height: 42px;
+}
+@media screen and (max-width: 920px) {
+  .header__logo {
+    width: 80px;
+    height: 45px;
+  }
 }
 .header__logo-svg {
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 920px) {
+  .header__menu {
+    display: none;
+  }
 }
 .header__list {
   display: -webkit-box;
@@ -765,35 +792,79 @@ ol {
 .header__list-item-button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .header__info {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  right: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
 }
 .header__info-call {
-  padding: 10px 0px 10px 0;
   margin-right: 30px;
 }
-.header__info-pic {
-  padding-top: 5px;
+@media screen and (max-width: 920px) {
+  .header__info-call {
+    margin-right: 20px;
+  }
 }
+.header__info-call a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__info-call a svg {
+  display: none;
+}
+@media screen and (max-width: 920px) {
+  .header__info-call a svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .header__info-call a span {
+    display: none;
+  }
+}
+.header__info-pic {
+  width: 25px;
+  height: 25px;
+}
+.header__info-pic-svg {
+  width: 100%;
+  height: 100%;
+}
+
 .header__bottom {
   opacity: 0;
   pointer-events: none;
   width: 100%;
   background-color: #ffffff;
-  height: 382px;
   position: fixed;
   z-index: 4;
   padding-top: 30px;
+  padding-bottom: 120px;
   border-width: 1px 0px 0px 0px;
   border-color: #EEEEEE;
   border-style: solid;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+}
+@media screen and (max-width: 1200px) {
+  .header__bottom {
+    left: -20px;
+    width: calc(100% + 20px);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .header__bottom-content {
   position: relative;
@@ -833,18 +904,25 @@ ol {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
 }
+.header__bottom-cards-list-item-link {
+  display: block;
+}
 .header__bottom-cards-pic {
-  width: 160px;
+  width: 100%;
   height: 100px;
   margin-bottom: 10px;
+  display: block;
 }
 .header__bottom-cards-pic-img {
   width: 100%;
   height: 100%;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .header__bottom-cards-pic-line {
   margin-bottom: 10px;
-  width: 160px;
+  width: 100%;
   height: 100px;
   border-width: 0px 0px 2px 0px;
   border-color: #9A8873;
@@ -865,6 +943,44 @@ ol {
   opacity: 0.3;
 }
 
+.bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 18px 20px;
+}
+@media (min-width: 920px) {
+  .bar {
+    display: none;
+  }
+}
+.bar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bar__list-item-btn {
+  display: block;
+  border: none;
+  background: none;
+}
+.bar__list-item-btn span {
+  width: 22px;
+  height: 2px;
+  display: block;
+  background-color: #070605;
+  margin-bottom: 5px;
+}
+.bar__list-item-btn span:last-child {
+  margin-bottom: 0;
+}
 .poster {
   position: relative;
 }

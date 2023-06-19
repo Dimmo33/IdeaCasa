@@ -1,0 +1,45 @@
+.bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    padding: 18px 20px;
+    @media (min-width: 920px) {
+        display: none;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &-item {
+            &-btn {
+                display: block;
+                border: none;
+                background: none;
+                span {
+                    width: 22px;
+                    height: 2px;
+                    display: block;
+                    background-color: $black;
+                    margin-bottom: 5px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__list-item {
+    }
+
+    &__list-item-link {
+    }
+
+    &__list-item-btn {
+    }
+
+    &__list-item-btn--menu {
+    }
+}

@@ -5,7 +5,7 @@
 
     @media screen and (max-width: 920px) {
         margin-top: 40px;
-				margin-bottom: 80px;
+        margin-bottom: 80px;
     }
 
     &__body {
@@ -39,7 +39,7 @@
     }
 
     &__content {
-			pointer-events: none;
+        pointer-events: none;
         padding-top: 120px;
         position: relative;
 
@@ -50,14 +50,14 @@
     }
 
     &__card {
-			pointer-events: all;
-			padding: 40px;
-			width: 360px;
-			height: 246px;	
-			position: relative;
-			border: 1px solid $white;
-			background-color: $white;
-			margin-bottom: 20px;
+        pointer-events: all;
+        padding: 40px;
+        width: 360px;
+        height: 246px;
+        position: relative;
+        border: 1px solid $white;
+        background-color: $white;
+        margin-bottom: 20px;
 
         &.active {
             border: 1px solid $accent;
@@ -78,20 +78,20 @@
         &-text {
             margin-bottom: 8px;
 
-						&--bottom {
-							margin-top: 8px;
-							margin-bottom: 0;
-						}
+            &--bottom {
+                margin-top: 8px;
+                margin-bottom: 0;
+            }
         }
 
-				&-call {
-					transition: color 0.3s ease;
+        &-call {
+            transition: color 0.3s ease;
 
-					&:hover {
-						color: $accent;
-						border-color: $accent;
-					}
-				}
+            &:hover {
+                color: $accent;
+                border-color: $accent;
+            }
+        }
 
         &-btn {
             color: $accent;
