@@ -2075,34 +2075,20 @@ ol {
 
 .page-404 {
   position: relative;
-  width: 100%;
-  margin-top: 116px;
-  height: 100%;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 230px;
 }
 @media screen and (max-width: 920px) {
   .page-404 {
     margin-top: 0;
-    margin-bottom: 130px;
-  }
-}
-.page-404__button {
-  display: none;
-}
-@media screen and (max-width: 920px) {
-  .page-404__button {
-    display: block;
-    position: absolute;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 6;
-    bottom: 0;
+    padding-top: 106px;
   }
 }
 .page-404__pic {
-  z-index: 2;
+  top: 280px;
   position: absolute;
   right: 0px;
   max-width: 920px;
@@ -2116,23 +2102,29 @@ ol {
 @media screen and (max-width: 1100px) {
   .page-404__pic {
     right: -210px;
-    top: 100px;
   }
 }
 @media screen and (max-width: 920px) {
   .page-404__pic {
-    right: -50p;
-    top: 280px;
+    right: -50px;
   }
 }
 @media screen and (max-width: 720px) {
   .page-404__pic {
     right: 0;
+    top: 340px;
   }
 }
 @media screen and (max-width: 480px) {
   .page-404__pic {
-    top: 310px;
+    top: 340px;
+    right: -50px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .page-404__pic {
+    top: 300px;
+    right: -50px;
   }
 }
 .page-404__pic-img {
@@ -2140,14 +2132,14 @@ ol {
   height: 100%;
 }
 .page-404__content {
-  width: 100%;
   z-index: 3;
-  top: 100px;
-  position: absolute;
+  width: 100%;
+  height: inherit;
+  position: relative;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 480px) {
   .page-404__content {
-    position: relative;
+    position: inherit;
   }
 }
 .page-404__content-title {
@@ -2161,35 +2153,39 @@ ol {
   max-width: 506px;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 720px) {
-  .page-404__content-text {
-    width: 100%;
-    margin-bottom: 450px;
-  }
-}
 @media screen and (max-width: 480px) {
   .page-404__content-text {
-    margin-bottom: 350px;
+    margin-bottom: 0;
   }
 }
 .page-404__content-button {
   position: relative;
   width: 100%;
-  padding-right: auto;
-  padding-left: auto;
-}
-@media screen and (max-width: 920px) {
-  .page-404__content-button-link {
-    position: absolute;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
 }
 @media screen and (max-width: 480px) {
-  .page-404__content-button-link {
-    width: 100%;
+  .page-404__content-button {
+    position: absolute;
+    text-align: center;
+    bottom: 73px;
+    z-index: 1;
   }
+}
+@media screen and (max-width: 360px) {
+  .page-404__content-button {
+    bottom: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.page-404__content-button-link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .ordering {
