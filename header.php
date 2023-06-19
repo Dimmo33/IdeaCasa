@@ -29,28 +29,28 @@
 <div class="page">
         <header class="header js-header">
             <div class="header__body layout">
-                <div class="header__logo">
+                <a href="/" class="header__logo">
                     <img class="header__logo-svg" src="<?php echo ic_image_directory()?>logo-white.svg" alt="">
-                </div>
+                </a>
                 <div class="header__menu">
                     <div class="header__mobile js-header-mobile">
                         <nav class="header__nav">
                             <ul class="header__list">
                                 <li class="header__list-item">
-                                    <a class="header__list-item-button text-white" href="#">Главная</a>
+                                    <a class="header__list-item-button text-white" href="/">Главная</a>
                                 </li>
                                 <li class="header__list-item">
                                     <button type="button"
                                         class="header__list-item-button text-white js-header-menu-toggle">Каталог</button>
                                 </li>
                                 <li class="header__list-item">
-                                    <a class="header__list-item-button text-white" href="#">О нас</a>
+                                    <a class="header__list-item-button text-white" href="/about">О нас</a>
                                 </li>
                                 <li class="header__list-item">
-                                    <a class="header__list-item-button text-white" href="#">Где купить</a>
+                                    <a class="header__list-item-button text-white" href="/where-buy/">Где купить</a>
                                 </li>
                                 <li class="header__list-item">
-                                    <a class="header__list-item-button text-white" href="#">Контакты</a>
+                                    <a class="header__list-item-button text-white" href="/contacts/">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -405,7 +405,7 @@
                     </button>
                 </li>
                 <li class="bar__list-item">
-                    <a href="/" class="bar__list-item-link">
+                    <a href="/where-buy/" class="bar__list-item-link">
                         <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M14.4284 7.14268C14.4284 10.6998 7.99986 19.2855 7.99986 19.2855C7.99986 19.2855 1.57129 10.6998 1.57129 7.14268C1.57129 5.43772 2.24858 3.80259 3.45417 2.597C4.65976 1.39141 6.2949 0.714111 7.99986 0.714111C9.70482 0.714111 11.34 1.39141 12.5455 2.597C13.7511 3.80259 14.4284 5.43772 14.4284 7.14268Z"

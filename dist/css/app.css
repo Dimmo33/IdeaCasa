@@ -1038,11 +1038,15 @@ ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 @media screen and (max-width: 920px) {
   .section-text {
     padding-right: 20px;
     padding-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 .section-text__block {
@@ -1316,11 +1320,6 @@ ol {
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 36px;
 }
-@media screen and (max-width: 920px) {
-  .contacts__list-1 {
-    display: none;
-  }
-}
 .contacts__list-2 {
   display: none;
 }
@@ -1405,7 +1404,7 @@ ol {
 }
 .contacts__requisites {
   padding-top: 140px;
-  padding-bottom: 140px;
+  padding-bottom: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1413,6 +1412,7 @@ ol {
 @media screen and (max-width: 920px) {
   .contacts__requisites {
     padding-top: 80px;
+    padding-bottom: 40px;
   }
 }
 .contacts__requisites-block {
@@ -2375,6 +2375,7 @@ ol {
   padding-top: 80px;
   -webkit-filter: invert(1);
           filter: invert(1);
+  margin-top: 80px;
 }
 .footer__body {
   display: grid;
@@ -3336,6 +3337,52 @@ ol {
 .prs__slider {
   margin-top: 40px;
   overflow: hidden;
+}
+
+.brands__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  opacity: 0.5;
+}
+@media screen and (max-width: 1200px) {
+  .brands__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+.brands__list-item {
+  height: 35px;
+  max-height: 35px;
+}
+@media screen and (max-width: 1200px) {
+  .brands__list-item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    max-width: 50%;
+    height: 25px;
+  }
+  .brands__list-item:last-child {
+    margin-right: 0;
+  }
+}
+.brands__list-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 /**
  * Swiper 9.4.1

@@ -79,10 +79,10 @@
                         <h4 class="title-4-bold footer__body-columns-list-item-subtitle">
                             О компании
                         </h4>
-                        <a class="text footer__body-columns-list-item-text" href="#">
+                        <a class="text footer__body-columns-list-item-text" href="/about">
                             О нас
                         </a>
-                        <a class="text footer__body-columns-list-item-text" href="#">
+                        <a class="text footer__body-columns-list-item-text" href="/contacts/">
                             Контакты
                         </a>
                     </li>
@@ -94,10 +94,10 @@
                         <h4 class="title-4-bold footer__body-columns-list-item-subtitle">
                             Клиентам
                         </h4>
-                        <a class="text footer__body-columns-list-item-text" href="#">
+                        <a class="text footer__body-columns-list-item-text" href="/where-buy/">
                             Где купить
                         </a>
-                        <a class="text footer__body-columns-list-item-text" href="#">
+                        <a class="text footer__body-columns-list-item-text" href="/delivery/">
                             Доставка и оплата
                         </a>
                     </li>
@@ -108,7 +108,7 @@
     <div class="footer__bottom layout">
         <div class="footer__bottom-body">
             <div class="footer__bottom-body-content">
-                <a class="text footer__bottom-body-content-link" href="#">
+                <a class="text footer__bottom-body-content-link" href="/policy/">
                     Политика конфиденциальности
                 </a>
                 <a class="text footer__bottom-body-content-link" href="#">

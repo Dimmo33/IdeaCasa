@@ -26,12 +26,8 @@ if (prs[0]) {
                 // when window width is >= 480px
                 780: {
                     slidesPerView: 3,
-                },
-                // when window width is >= 640px
-                1250: {
-                    slidesPerView: 4,
                     spaceBetween: 40
-                }
+                },
             }
         });
     })
