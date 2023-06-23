@@ -195,7 +195,8 @@
 	border-width: 1px;
 	border-color: $accent;
 	border-style: solid;
-
+	cursor: pointer;
+	
 	&:hover {
 		background-color: $hover-accent;
 		border-color: $hover-accent;
@@ -220,6 +221,7 @@
 	border-width: 1px;
 	border-color: $accent;
 	border-style: solid;
+	cursor: pointer;
 
 	&:hover {
 		background-color: $accent;

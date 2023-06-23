@@ -1,66 +1,379 @@
 .ordering {
-	margin-top: 80px;
+	margin-bottom: 140px;
 
-	@media screen and (max-width: 920px) {
-		padding-left: 20px;
-		padding-right: 20px;
+	&--var2 {
+		margin-bottom: 80px;
 	}
 
-	&__block {
-		list-style-type: none;
-		margin-bottom: 40px;
+	&--var3 {
+		margin-bottom: 0;
+	}
+
+
+
+	&__body {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-gap: 35px;
+		grid-gap: 40px;
 
-		@media screen and (max-width: 920px) {
-			grid-template-columns: repeat(1, 1fr);
-			grid-gap: 12px;
-			margin-bottom: 22px;
+		@media screen and (max-width: 1200px) {
+			grid-template-columns: (1fr 360px);
 		}
 
-		&-1 {
-			display: flex;
+		@media screen and (max-width: 1060px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		&-column-1 {
+			display: block;
 			min-width: 760px;
+
+			@media screen and (max-width: 1200px) {
+				min-width: 100%;
+				width: 100%;
+				max-width: 100%;
+			}
 
 			@media screen and (max-width: 920px) {
 				min-width: auto;
 			}
+		}
 
-		&-2 {
-			margin-top: 18px;
+		&-column-2 {
 
 			@media screen and (max-width: 920px) {
 				display: block;
 				width: 100%;
-
 			}
 		}
 	}
 
-	@media screen and (max-width: 920px) {
-			margin-top: 40px;
+	&__return {
+		width: fit-content;
+		display: flex;
+		margin-bottom: 22px;
+		
+
+		&:hover &-text {
+			color: $gray4;
+		}
+
+		&:hover &-svg path {
+			stroke: $gray4;
+		}
+
+		&-svg {
+			margin-top: 3px;
+			margin-right: 8px;
+		}
+
+		&-svg path {
+			transition: stroke 0.3s ease;
+		}
+
+		&-text {
+			color: $gray3;
+			transition: color 0.3s ease;
 		}
 	}
 
 	&__delivery {
 		width: 100%;
 
+		&-subtitle {
+			margin-bottom: 40px;
+
+			@media screen and (max-width: 920px) {
+				margin-bottom: 22px;
+
+				&--var2 {
+					margin-bottom: 40px;
+				}
+			}
+		}
+
 		&-list {
 			width: 100%;
 			display: flex;
 			grid-template-columns: repeat(3, 1fr);
+			margin-bottom: 12px;
+
+			@media screen and (max-width: 920px) {
+				grid-template-columns: repeat(1, 1fr);
+				display: grid;
+			}
 
 			&-item {
-				padding: 16px 14px 16px 22px;
+				
 				width: 100%;
-				border: 1px solid $accent;
+				margin-right: -1px;
+				border: 1px solid $gray2;
+				transition: all 0.3s ease;
+
+				@media screen and (max-width: 920px) {
+					grid-template-columns: repeat(1, 1fr);
+					display: grid;
+					margin-right: 0;
+					margin-bottom: -1px;
+				}
+
+				&.active {
+					background-color: $accent;
+					border-color: $accent;
+					.ordering__delivery-list-item-content-subtitle {
+						color: $white;
+					}
+
+					.ordering__delivery-list-item-content-text {
+						color: $white;
+					}
+				}
 				
 				&-content {
+					padding: 16px 14px 16px 22px;
 					width: 100%;
 					display: block;
+					background-color: transparent;
+					border: none;
+					text-align: start;
+					cursor: pointer;
+
+					@media screen and (max-width: 920px) {
+						display: grid;
+					}
+					
+					&-subtitle {
+						margin-bottom: 4px;
+						color: $gray4;
+						transition: all 0.3s ease;
+					}
+
+					&-text {
+						white-space: nowrap;
+						transition: all 0.3s ease;
+						color: $gray4;
+					}
+				}
+			}
+		}
+
+		&-text {
+			color: $gray4;
+		}
+	}
+
+	&__address {
+		width: 100%;
+
+		&-container {
+			display: flex;
+			width: 100%;
+			border: 1px $accent solid;
+			padding: 35px 28px 28px 28px;
+			margin-top: 40px;
+
+			@media screen and (max-width: 680px) {
+				padding: 15px;
+			}
+
+			&-mark {
+				font-size: 49px;
+				font-weight: 400;
+				line-height: 45px;
+				letter-spacing: 0em;
+				color: $accent;
+				margin-right: 44px;
+
+				@media screen and (max-width: 680px) {
+					min-height: 100%;
+					margin-right: 10px;
+				}
+			}
+
+			&-text {
+				color: $accent;
+			}
+		}
+	}
+
+	&__input {
+		color: $gray3;
+		border: 1px $gray2 solid;
+		padding: 14px;
+		width: 100%;
+		position: relative;
+		z-index: 0;
+
+		&--var2 {
+			// height: 100%;
+		}
+
+		&--var3 {
+			margin-bottom: 22px;
+
+			&--bottom {
+				margin-bottom: 0;
+			}
+		}
+
+		&-text {
+			margin-bottom: 6px;
+		}
+
+		&-list {
+			margin-top: 28px;
+			display: flex;
+			grid-template-columns: (4, 1fr);
+			grid-gap: 28px;
+
+			@media screen and (max-width: 680px) {
+				grid-template-columns: repeat(2, 1fr);
+				display: grid;
+			}
+
+			&--var2 {
+				grid-template-columns: (2, 1fr);
+				grid-gap: 40px;
+
+				@media screen and (max-width: 680px) {
+					grid-template-columns: repeat(1, 1fr);
+					display: grid;
+				}
+			}
+	
+			&-item {
+				width: 100%;
+			}
+		}
+	}
+
+	&__payment {
+
+		&-btn {
+			width: 100%;
+			display: flex;
+			text-align: start;
+			padding: 15px 20px 15px 20px;
+			background-color: transparent;
+			cursor: pointer;
+			border: 1px $gray2 solid;
+			margin-bottom: 12px;
+			transition: all 0.3s ease;
+
+			&--bottom {
+				margin-bottom: 140px;
+			}
+
+			&.active {
+				background-color: $accent;
+				border: 1px $accent solid;
+			}
+
+			&.active &-pic-img {
+				display: block;
+			}
+
+			&.active &-text {
+				color: $white;
+			}
+
+			&-pic {
+				padding: 1px;
+				width: 20px;
+				height: 20px;
+				border: 1px $gray2 solid;
+				margin-right: 14px;
+				
+				&-img {
+					display: none;
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			&-text {
+
+			}
+		}
+	}
+
+	&__price {
+		padding: 30px;
+		// position: relative;
+		width: 100%;
+		display: block;
+		border: 1px solid $gray2;
+		margin-bottom: 11px;
+
+		@media screen and (max-width: 680px) {
+			// border: none;
+			display: block;
+			margin-bottom: 60px;
+		}
+
+
+		&-total {
+			position: relative;
+			display: flex;
+			align-items: center;
+			margin-bottom: 12px;
+	
+			&--var2 {
+				margin-bottom: 8px;
+			}
+	
+			&--var3 {
+				margin-bottom: 0;
+			}
+	
+			&-right {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+		}
+	
+		&-btn {
+			width: 100%;
+	
+			@media screen and (max-width: 920px) {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+		}
+	
+		&-help {
+			margin-top: 22px;
+	
+			&-subtitle {
+				color: $accent;
+				margin-bottom: 12px;
+			}
+	
+			&-link {
+				display: flex;
+	
+				&-text {
+					color: $accent;
+					transition: all 0.3s ease;
+	
+					&:hover {
+						color: $hover-accent;
+					}
+				}
+	
+				&-content {
+					margin: 0 11px 0 11px;
+					color: $accent;
 				}
 			}
 		}
 	}
+}
+
+
+
+.main {
+	position: relative;
 }
