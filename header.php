@@ -27,7 +27,11 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div class="page">
-        <header class="header js-header">
+        <header class="header js-header <?php
+        if ( is_product() ) {
+            echo 'invert';
+        }
+    ?>">
             <div class="header__body layout">
                 <a href="/" class="header__logo">
                     <img class="header__logo-svg" src="<?php echo ic_image_directory()?>logo-white.svg" alt="">
@@ -95,286 +99,19 @@
                 <div class="header__bottom-content layout">
                     <div class="header__bottom-menu">
                         <ul class="header__bottom-menu-list">
-                            <li class="header__bottom-menu-list-item">
-                                <button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
-                                    Спальня
-                                </button>
-                            </li>
-                            <li class="header__bottom-menu-list-item">
-                                <button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
-                                    Гостиная
-                                </button>
-                            </li>
-                            <li class="header__bottom-menu-list-item">
-                                <button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
-                                    Кухня
-                                </button>
-                            </li>
-                            <li class="header__bottom-menu-list-item">
-                                <button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
-                                    Для дома
-                                </button>
-                            </li>
-                            <li class="header__bottom-menu-list-item">
-                                <button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
-                                    Детская мебель
-                                </button>
-                            </li>
-                            <li class="header__bottom-menu-list-item">
-                                <button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
-                                    Декор
-                                </button>
-                            </li>
+                            <?php echo ic_menu_top_level();?>
                         </ul>
                     </div>
                     <div class="header__bottom-wrapper">
-                        <div class="header__bottom-cards js-header-cards">
-                            <h2 class="header__bottom-cards-subtitle title-2">
-                                Спальня
-                            </h2>
-                            <ul class="header__bottom-cards-list">
-                                <li class="header__bottom-cards-list-item">
-                                    <a href="#" class="header__bottom-cards-list-item-link">
-                                        <span class="header__bottom-cards-pic">
-                                            <img class="header__bottom-cards-pic-img"
-                                                src="<?php echo ic_image_directory()?>header-cards-pic-1.jpg" alt="">
-                                        </span>
-                                        <span class="header__bottom-cards-text text">
-                                            Столы
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic">
-                                        <img class="header__bottom-cards-pic-img" src="<?php echo ic_image_directory()?>header-cards-pic-2.jpg"
-                                            alt="">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Стулья
-                                    </p>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic">
-                                        <img class="header__bottom-cards-pic-img" src="<?php echo ic_image_directory()?>header-cards-pic-3.jpg"
-                                            alt="">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Кухонные островки
-                                    </p>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic-line">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Смотреть все
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="header__bottom-cards js-header-cards">
-                            <h2 class="header__bottom-cards-subtitle title-2">
-                                Гостиная
-                            </h2>
-                            <ul class="header__bottom-cards-list">
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic">
-                                        <img class="header__bottom-cards-pic-img" src="<?php echo ic_image_directory()?>header-cards-pic-1.jpg"
-                                            alt="">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Столы
-                                    </p>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic">
-                                        <img class="header__bottom-cards-pic-img" src="<?php echo ic_image_directory()?>header-cards-pic-2.jpg"
-                                            alt="">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Стулья
-                                    </p>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic">
-                                        <img class="header__bottom-cards-pic-img" src="<?php echo ic_image_directory()?>header-cards-pic-3.jpg"
-                                            alt="">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Кухонные островки
-                                    </p>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic-line">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Смотреть все
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="header__bottom-cards active js-header-cards">
-                            <h2 class="header__bottom-cards-subtitle title-2">
-                                Кухня
-                            </h2>
-                            <ul class="header__bottom-cards-list">
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic">
-                                        <img class="header__bottom-cards-pic-img" src="<?php echo ic_image_directory()?>header-cards-pic-1.jpg"
-                                            alt="">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Столы
-                                    </p>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic">
-                                        <img class="header__bottom-cards-pic-img" src="<?php echo ic_image_directory()?>header-cards-pic-2.jpg"
-                                            alt="">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Стулья
-                                    </p>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic">
-                                        <img class="header__bottom-cards-pic-img" src="<?php echo ic_image_directory()?>header-cards-pic-3.jpg"
-                                            alt="">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Кухонные островки
-                                    </p>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic-line">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Смотреть все
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="header__bottom-cards js-header-cards">
-                            <h2 class="header__bottom-cards-subtitle title-2">
-                                Для дома
-                            </h2>
-                            <ul class="header__bottom-cards-list">
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic">
-                                        <img class="header__bottom-cards-pic-img" src="<?php echo ic_image_directory()?>header-cards-pic-1.jpg"
-                                            alt="">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Столы
-                                    </p>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic">
-                                        <img class="header__bottom-cards-pic-img" src="<?php echo ic_image_directory()?>header-cards-pic-2.jpg"
-                                            alt="">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Стулья
-                                    </p>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic">
-                                        <img class="header__bottom-cards-pic-img" src="<?php echo ic_image_directory()?>header-cards-pic-3.jpg"
-                                            alt="">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Кухонные островки
-                                    </p>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic-line">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Смотреть все
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="header__bottom-cards js-header-cards">
-                            <h2 class="header__bottom-cards-subtitle title-2">
-                                Детская мебель
-                            </h2>
-                            <ul class="header__bottom-cards-list">
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic">
-                                        <img class="header__bottom-cards-pic-img" src="<?php echo ic_image_directory()?>header-cards-pic-1.jpg"
-                                            alt="">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Столы
-                                    </p>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic">
-                                        <img class="header__bottom-cards-pic-img" src="<?php echo ic_image_directory()?>header-cards-pic-2.jpg"
-                                            alt="">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Стулья
-                                    </p>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic">
-                                        <img class="header__bottom-cards-pic-img" src="<?php echo ic_image_directory()?>header-cards-pic-3.jpg"
-                                            alt="">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Кухонные островки
-                                    </p>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic-line">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Смотреть все
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="header__bottom-cards js-header-cards">
-                            <h2 class="header__bottom-cards-subtitle title-2">
-                                Декор
-                            </h2>
-                            <ul class="header__bottom-cards-list">
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic">
-                                        <img class="header__bottom-cards-pic-img" src="<?php echo ic_image_directory()?>header-cards-pic-1.jpg"
-                                            alt="">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Столы
-                                    </p>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic">
-                                        <img class="header__bottom-cards-pic-img" src="<?php echo ic_image_directory()?>header-cards-pic-2.jpg"
-                                            alt="">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Стулья
-                                    </p>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic">
-                                        <img class="header__bottom-cards-pic-img" src="<?php echo ic_image_directory()?>header-cards-pic-3.jpg"
-                                            alt="">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Кухонные островки
-                                    </p>
-                                </li>
-                                <li class="header__bottom-cards-list-item">
-                                    <div class="header__bottom-cards-pic-line">
-                                    </div>
-                                    <p class="header__bottom-cards-text text">
-                                        Смотреть все
-                                    </p>
-                                </li>
-                            </ul>
+                       <?php echo ic_menu_second_level();?>
+                       <div class="header__bottom-info">
+                            <a href="tel:+7 (495) 172 15 24" class="header__bottom-info-link title-4">+7 (495) 172 15
+                                24</a>
+                            <a href="mailto:info@ideecasa.ru"
+                                class="header__bottom-info-link title-4">info@ideecasa.ru</a>
+                            <p class="header__bottom-info-text">Пн - Вс 10:00 - 21:00</p>
+                            <p class="header__bottom-info-text">г. Москва , Щипковский переулок, 4</p>
+                            <p class="header__bottom-info-text">ТЦ Mobel Expo, Нахимовский проспект 24</p>
                         </div>
                     </div>
                     <button class="header__bottom-cards-btn js-header-bottom-btn">
@@ -391,9 +128,9 @@
                     <a href="/" class="bar__list-item-link">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.714355 10.0001L10.0001 0.714355L19.2858 10.0001" stroke="#070605"
-                                stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round" />
+                                stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M3.57153 12.1428V19.2857H16.4287V12.1428" stroke="#070605" stroke-width="1.42857"
-                                stroke-linecap="round" stroke-linejoin="round" />
+                                stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
                     </a>
                 </li>
@@ -409,12 +146,12 @@
                         <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M14.4284 7.14268C14.4284 10.6998 7.99986 19.2855 7.99986 19.2855C7.99986 19.2855 1.57129 10.6998 1.57129 7.14268C1.57129 5.43772 2.24858 3.80259 3.45417 2.597C4.65976 1.39141 6.2949 0.714111 7.99986 0.714111C9.70482 0.714111 11.34 1.39141 12.5455 2.597C13.7511 3.80259 14.4284 5.43772 14.4284 7.14268Z"
-                                stroke="#070605" stroke-width="1.42857" stroke-linecap="round"
-                                stroke-linejoin="round" />
+                                stroke="#070605" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
                             <path
                                 d="M7.99979 9.28571C9.18326 9.28571 10.1426 8.32632 10.1426 7.14286C10.1426 5.95939 9.18326 5 7.99979 5C6.81632 5 5.85693 5.95939 5.85693 7.14286C5.85693 8.32632 6.81632 9.28571 7.99979 9.28571Z"
-                                stroke="#070605" stroke-width="1.42857" stroke-linecap="round"
-                                stroke-linejoin="round" />
+                                stroke="#070605" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
                         </svg>
                     </a>
                 </li>
@@ -423,8 +160,8 @@
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M10.0001 0.714357C8.32041 0.71488 6.67235 1.17098 5.23142 2.03409C3.79048 2.8972 2.61064 4.13498 1.81755 5.61561C1.02446 7.09623 0.647828 8.76425 0.727769 10.442C0.807709 12.1198 1.34123 13.7444 2.2715 15.1429L0.714355 19.2858L5.92864 18.3429C7.18422 18.9565 8.5621 19.2787 9.95957 19.2857C11.357 19.2926 12.738 18.984 13.9996 18.3829C15.2612 17.7818 16.3709 16.9037 17.2459 15.814C18.1209 14.7244 18.7386 13.4513 19.0531 12.0897C19.3676 10.728 19.3707 9.31296 19.0621 7.94997C18.7536 6.58697 18.1414 5.31119 17.2712 4.21774C16.4009 3.12428 15.2951 2.24134 14.0362 1.63474C12.7772 1.02814 11.3976 0.713532 10.0001 0.714357Z"
-                                stroke="#070605" stroke-width="1.42857" stroke-linecap="round"
-                                stroke-linejoin="round" />
+                                stroke="#070605" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
                         </svg>
                     </a>
                 </li>

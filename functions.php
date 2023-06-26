@@ -186,3 +186,122 @@ if ( class_exists( 'WooCommerce' ) ) {
 function ic_image_directory() {
     echo get_template_directory_uri() . '/dist/images/';
 }
+
+// ACF
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page(array(
+        'page_title'    => 'Глобальные настройки',
+        'menu_title'    => 'Глобальные настройки',
+        'menu_slug'     => 'theme-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+    
+}
+
+// Menu And Navigation
+function ic_menu_top_level() {
+    $cats = get_field('cats', 'option');
+    $catCount = 0;
+    foreach ($cats as $cat) {
+        ?>
+            <li class="header__bottom-menu-list-item">
+                <button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats <?php 
+            if ($catCount == 0) {
+                echo "active";
+                $catCount = 1;
+            }
+        ?>">
+                    <?php echo $cat->name;?>
+                </button>
+            </li>
+        <?php
+    }
+}
+
+function ic_menu_second_level() {
+    $cats = get_field('cats', 'option');
+    $catCount = 0;
+    foreach ($cats as $cat) {
+        ?>
+        <div class="header__bottom-cards js-header-cards <?php 
+            if ($catCount == 0) {
+                echo "active";
+                $catCount = 1;
+            }
+        ?>">
+            <button type="button" class="header__bottom-cards-back text js-header-bottom-back">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_535_1067)">
+                        <path
+                            d="M8.69995 0.428711L3.42852 5.70014C3.38752 5.73862 3.35485 5.78509 3.33251 5.83669C3.31017 5.88828 3.29865 5.94391 3.29865 6.00014C3.29865 6.05636 3.31017 6.11199 3.33251 6.16359C3.35485 6.21519 3.38752 6.26166 3.42852 6.30014L8.69995 11.5716"
+                            stroke="#969696" stroke-width="0.857143" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_535_1067">
+                            <rect width="12" height="12" fill="white"
+                                transform="translate(12) rotate(90)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                Меню
+            </button>
+            <h2 class="header__bottom-cards-subtitle title-2">
+                <?php echo $cat->name;?>
+            </h2>
+            <ul class="header__bottom-cards-list">
+                <?php 
+                    $args = array(
+                        'taxonomy'     => 'product_cat',
+                        'child_of'     => 0,
+                        'parent'       => $cat->term_id,
+                        'orderby'      => 'name',
+                        'order'        => 'ASC',
+                        'hide_empty'   => 1,
+                        'hierarchical' => 1,
+                        // 'number'       => 0, // сколько выводить?
+                        // полный список параметров смотрите в описании функции http://wp-kama.ru/function/get_terms
+                    );
+                
+                    $categories = get_categories( $args );
+                    if( $categories ){
+                        foreach( $categories as $sub_cat ){
+                            ?>
+                            <li class="header__bottom-cards-list-item">
+                                <a href="<?php echo get_category_link( $sub_cat->term_id );?>" class="header__bottom-cards-list-item-link">
+                                    <span class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img"
+                                            src="<?php
+                                            $category_thumbnail = get_woocommerce_term_meta($sub_cat->term_id, 'thumbnail_id', true);
+                                            $image = wp_get_attachment_url($category_thumbnail);
+                                            echo $image;
+                                            ?>" alt="Фото">
+                                    </span>
+                                    <span class="header__bottom-cards-text text">
+                                        <?php echo $sub_cat->name;?>
+                                    </span>
+                                </a>
+                            </li>
+                            <?php
+                        }
+                    }
+                ?>
+            </ul>
+        </div>
+        <?php
+    }
+}
+// Remove sidebar
+remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+
+/**
+ * Remove WooCommerce breadcrumbs 
+ */
+add_action( 'init', 'my_remove_breadcrumbs' );
+ 
+function my_remove_breadcrumbs() {
+    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+}

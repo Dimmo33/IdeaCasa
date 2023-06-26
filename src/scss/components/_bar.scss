@@ -5,6 +5,7 @@
     width: 100%;
     background-color: $white;
     padding: 18px 20px;
+    z-index: 10;
     @media (min-width: 920px) {
         display: none;
     }
@@ -26,6 +27,9 @@
                     &:last-child {
                         margin-bottom: 0;
                     }
+                }
+                &--menu {
+                    cursor: pointer;
                 }
             }
         }

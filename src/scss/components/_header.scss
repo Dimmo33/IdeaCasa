@@ -1,13 +1,14 @@
 .header {
     position: fixed;
     width: 100%;
-    z-index: 4;
+    z-index: 11;
     background-color: transparent;
     transition: background-color 0.3s ease;
     @media screen and (max-width: 1200px) {
         padding: 0 20px;
     }
-    &.scrolled {
+    &.scrolled,
+    &.invert {
         background-color: $white;
 
         .header__body {
@@ -33,6 +34,13 @@
         .header__bottom {
             opacity: 1;
             pointer-events: all;
+        }
+
+        @media screen and (max-width: 920px) {
+            .header__info {
+                opacity: 0;
+                pointer-events: none;
+            }
         }
     }
 
@@ -94,6 +102,7 @@
         display: flex;
         align-items: center;
         margin-left: auto;
+        transition: opacity 0.3s ease;
 
         &-call {
             margin-right: 30px;
@@ -103,6 +112,9 @@
             a {
                 display: flex;
                 align-items: center;
+                @media screen and (max-width: 920px) {
+                    max-width: 20px;
+                }
                 svg {
                     display: none;
                     @media screen and (max-width: 920px) {
@@ -152,6 +164,10 @@
         padding-right: 20px;
     }
 
+    @media screen and (max-width: 920px) {
+        height: calc(100% - 60px - 85px);
+    }
+
     &-content {
         position: relative;
         display: flex;
@@ -159,6 +175,15 @@
     &-menu {
         padding-top: 10px;
         min-width: 300px;
+        @media screen and (max-width: 920px) {
+            padding-top: 0;
+        }
+        &-title {
+            margin-bottom: 30px;
+            @media screen and (min-width: 920px) {
+                display: none;
+            }
+        }
         &-list {
             &-item {
                 margin-bottom: 21px;
@@ -171,10 +196,41 @@
 
                     &.active {
                         color: $accent;
+                        @media screen and (max-width: 920px) {
+                            color: #070605;
+                        }
                     }
                 }
             }
         }
+    }
+
+    &-info {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 11;
+        background-color: #fff;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        &-link {
+            color: #969696;
+            border-bottom: 1px solid;
+            max-width: max-content;
+            margin-bottom: 10px;
+        }
+        &-text {
+            color: #969696;
+            margin-top: 8px;
+        }
+        @media screen and (min-width: 920px) {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 920px) {
     }
 
     &-cards {
@@ -182,18 +238,60 @@
         width: 100%;
         position: relative;
 
+        &-back {
+            position: absolute;
+            right: 20px;
+            top: 42px;
+            border: none;
+            background: none;
+            color: #969696;
+            cursor: pointer;
+            @media screen and (min-width: 920px) {
+                display: none;
+            }
+        }
+
         &.active {
             display: block;
+            @media screen and (max-width: 920px) {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 920px) {
+            position: fixed;
+            background: #fff;
+            left: 0;
+            top: 86px;
+            height: calc(100% - 85px - 226px);
+            overflow-y: scroll;
+            width: 100%;
+            z-index: 11;
+            padding: 30px 20px;
+
+            &.open {
+                display: block;
+            }
         }
 
         &-subtitle {
             margin-bottom: 40px;
+            @media screen and (max-width: 920px) {
+                padding-right: 65px;
+            }
         }
 
         &-list {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(4, 160px);
             grid-gap: 40px;
+            @media screen and (max-width: 1200px) {
+                grid-template-columns: repeat(3, 160px);
+            }
+            @media screen and (max-width: 920px) {
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                grid-gap: 40px;
+            }
 
             &-item {
                 &-link {
@@ -203,16 +301,20 @@
         }
 
         &-pic {
-            width: 100%;
+            width: 160px;
             height: 100px;
             margin-bottom: 10px;
             display: block;
+            @media screen and (max-width: 920px) {
+                width: 100%;
+                height: 90px;
+            }
 
             &-img {
                 width: 100%;
                 height: 100%;
                 display: block;
-                object-fit: contain;
+                object-fit: cover;
             }
 
             &-line {
@@ -237,6 +339,10 @@
 
             &:hover {
                 opacity: 0.3;
+            }
+
+            @media screen and (max-width: 920px) {
+                top: -80px;
             }
         }
     }

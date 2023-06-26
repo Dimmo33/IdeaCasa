@@ -5,6 +5,7 @@ if (header) {
     const headerClosedButton = document.querySelector(".js-header-bottom-btn")
     const headerCats = document.querySelectorAll(".js-header-cats")
     const headerCards = document.querySelectorAll(".js-header-cards")
+    const headerBottomBack = document.querySelectorAll(".js-header-bottom-back")
 
     window.addEventListener('scroll', function () {
         if (window.scrollY > 100) {
@@ -31,23 +32,50 @@ if (header) {
         }
     });
 
+
+    headerBottomBack.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+            headerCards[index].classList.remove("open")
+        })
+    })
+
+
     headerCats.forEach((item, index) => {
         console.log(item, index)
-        item.addEventListener('mouseover', () => {
-            headerCats.forEach((clearItem) => {
-                if (clearItem.classList.contains("active")) {
-                    clearItem.classList.remove("active")
-                }
-            })
-            item.classList.add("active")
-            console.log(headerCards[index])
-            headerCards.forEach((clearItem) => {
-                if (clearItem.classList.contains("active")) {
-                    clearItem.classList.remove("active")
-                }
-            })
-            headerCards[index].classList.add("active")
-        });
-
+        if (window.innerWidth <= 920) {
+            item.addEventListener('click', () => {
+                // headerCats.forEach((clearItem) => {
+                //     if (clearItem.classList.contains("open")) {
+                //         clearItem.classList.remove("open")
+                //     }
+                // })
+                // headerCards.forEach((clearItem) => {
+                //     if (clearItem.classList.contains("open")) {
+                //         clearItem.classList.remove("open")
+                //     }
+                // })
+                headerCards[index].classList.add("open")
+            });
+        } else {
+            item.addEventListener('mouseover', () => {
+                headerCats.forEach((clearItem) => {
+                    if (clearItem.classList.contains("active")) {
+                        clearItem.classList.remove("active")
+                    }
+                })
+                item.classList.add("active")
+                headerCards.forEach((clearItem) => {
+                    if (clearItem.classList.contains("active")) {
+                        clearItem.classList.remove("active")
+                    }
+                })
+                headerCards[index].classList.add("active")
+            });
+        }
     });
+
+    const barBtn = document.querySelector(".bar__list-item-btn--menu")
+    barBtn.addEventListener("click", () => {
+        header.classList.toggle("open");
+    })
 }

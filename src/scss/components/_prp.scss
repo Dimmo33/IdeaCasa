@@ -1,238 +1,224 @@
 .prp {
-	position: relative;
+    position: relative;
 
-	&:hover &__pic {
-		border-width: 0px 0px 3px 0px;
-	}
+    &:hover &__pic {
+        border-width: 0px 0px 3px 0px;
+    }
 
-	&__pic {
-		display: block;
-		position: relative;
-		max-width: 360px;
-		max-height: 204px;
-		margin-bottom: 18px;
-		transition: all 0.3s ease;
+    &__pic {
+        display: block;
+        position: relative;
+        max-width: 100%;
+        max-height: 204px;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 18px;
+        margin-bottom: 18px;
+        transition: all 0.3s ease;
 
-		@media screen and (max-width: 920px) {
-			max-height: 260px;
-		}
-		@media screen and (max-width: 600px) {
-			max-height: 290px;
-		}
-		
-		&:after {
-			content: "";
-			display: block;
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			width: 100%;
-			height: 1px;
-			transition: all 0.3s ease;
-			background-color: $black;
-		}
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            transition: all 0.3s ease;
+            background-color: $black;
+        }
 
-		&:hover::after {
-			height: 3px;
-		}
+        &:hover::after {
+            height: 3px;
+        }
 
-		@media screen and (max-width: 920px) {
-			max-width: 100%;
-			margin-bottom: 14px;
-		}
+        @media screen and (max-width: 920px) {
+            margin-bottom: 14px;
+        }
 
-		&-img {
-			width: 100%;
-			height: 100%;
-		}
-	}
+        &-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
 
-	&__text {
-		display: grid;
-		position: relative;
+    &__text {
+        display: grid;
+        position: relative;
 
-		&-brand {
-			margin-bottom: 3px;
-			color: $accent;
+        &-brand {
+            margin-bottom: 3px;
+            color: $accent;
 
-			@media screen and (max-width: 920px) {
-				margin-bottom: 4px;
-			}
-		}
+            @media screen and (max-width: 920px) {
+                margin-bottom: 4px;
+            }
+        }
 
-		&-subtitle {
-			
-		}
+        &-subtitle {
+        }
 
-		&-price {
-			position: absolute;
-			right: 0;
-			bottom: 0;
-		}
-	}
+        &-price {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
 }
-
 
 .prp-2 {
-	position: relative;
-	width: 100%;
-	display: flex;
-	border: 1px solid $gray2;
-	margin-bottom: 22px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    border: 1px solid $gray2;
+    margin-bottom: 22px;
 
-	@media screen and (max-width: 680px) {
-		border: none;
-		display: block;
-		margin-bottom: 60px;
-	}
+    @media screen and (max-width: 680px) {
+        border: none;
+        display: block;
+        margin-bottom: 60px;
+    }
 
-	&--var2 {
-		display: block;
-		margin-bottom: 11px;
-		padding: 30px;
+    &--var2 {
+        display: block;
+        margin-bottom: 11px;
+        padding: 30px;
 
-		@media screen and (max-width: 680px) {
-			border-top: 1px;
-			border-bottom: 1px;
-			border-left: 0;
-			border-right: 0;
-			border-style: solid;
-			border-color: $gray2;
-		}
-	}
+        @media screen and (max-width: 680px) {
+            border-top: 1px;
+            border-bottom: 1px;
+            border-left: 0;
+            border-right: 0;
+            border-style: solid;
+            border-color: $gray2;
+        }
+    }
 
-	&__btn-close {
-		position: absolute;
-		top: 22px;
-		right: 22px;
-		border: 0;
-		border-radius: 0;
-		transition: all 300ms ease;
-		background: #ffffff;
-		cursor: pointer;
+    &__btn-close {
+        position: absolute;
+        top: 22px;
+        right: 22px;
+        border: 0;
+        border-radius: 0;
+        transition: all 300ms ease;
+        background: #ffffff;
+        cursor: pointer;
 
-		@media screen and (max-width: 680px) {
-			top: 12px;
-			right: 12px;
-		}
+        @media screen and (max-width: 680px) {
+            top: 12px;
+            right: 12px;
+        }
 
-		&:hover {
-			opacity: 0.3;
-		}
+        &:hover {
+            opacity: 0.3;
+        }
 
-		&-pic {
-			width: 15px;
-			height: 15px;
+        &-pic {
+            width: 15px;
+            height: 15px;
 
-			@media screen and (max-width: 680px) {
-				width: 12px;
-				height: 12px;
-			}
+            @media screen and (max-width: 680px) {
+                width: 12px;
+                height: 12px;
+            }
 
-			&-img {
-				width: 100%;
-				height: 100%;
-			}
-		}
-	}
+            &-img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
 
-	&__pic {
-		width: 320px;
-		height: 200px;
-		margin-right: 40px;
+    &__pic {
+        width: 320px;
+        height: 200px;
+        margin-right: 40px;
 
-		@media screen and (max-width: 680px) {
-			width: 100%;
-			height: auto;
-			margin-right: 0;
-		}
+        @media screen and (max-width: 680px) {
+            width: 100%;
+            height: auto;
+            margin-right: 0;
+        }
 
-		&-img {
-			width: 100%;
-			height: 100%;
-		}
-	}
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 
-	&__content {
-		padding: 28px 0 28px 0;
-		display: block;
-		position: relative;
+    &__content {
+        padding: 28px 0 28px 0;
+        display: block;
+        position: relative;
 
-		@media screen and (max-width: 680px) {
-			padding: 0 20px 0 20px;
-		}
+        @media screen and (max-width: 680px) {
+            padding: 0 20px 0 20px;
+        }
 
-		&-brand {
-			margin-bottom: 3px;
-			color: $accent;
-		}
+        &-brand {
+            margin-bottom: 3px;
+            color: $accent;
+        }
 
-		&-subtitle {
-			margin-bottom: 14px;
+        &-subtitle {
+            margin-bottom: 14px;
 
-			@media screen and (max-width: 680px) {
-				margin-bottom: 16px;
-			}
-		}
+            @media screen and (max-width: 680px) {
+                margin-bottom: 16px;
+            }
+        }
 
-		&-price {
-			margin-bottom: 19px;
+        &-price {
+            margin-bottom: 19px;
 
-			@media screen and (max-width: 680px) {
-				margin-bottom: 0;
-				position: absolute;
-				right: 20px;
-				bottom: 49px;
-			}
-		}
+            @media screen and (max-width: 680px) {
+                margin-bottom: 0;
+                position: absolute;
+                right: 20px;
+                bottom: 49px;
+            }
+        }
 
-		&-container {
-			position: relative;
-			padding: 6px 10px 6px 10px;
-			border: 1px solid $gray2;
-			width: 100px;
-			text-align: center;
+        &-container {
+            position: relative;
+            padding: 6px 10px 6px 10px;
+            border: 1px solid $gray2;
+            width: 100px;
+            text-align: center;
 
-			@media screen and (max-width: 680px) {
-				width: 100%;
-			}
+            @media screen and (max-width: 680px) {
+                width: 100%;
+            }
 
-			&-btn {
-				position: absolute;
-				background-color: transparent;
-				border: none;
-				width: 12px;
-				height: 12px;
-				transition: all 0.3s ease;
-				left: 10px;
-				top: 6px;
-				cursor: pointer;
+            &-btn {
+                position: absolute;
+                background-color: transparent;
+                border: none;
+                width: 12px;
+                height: 12px;
+                transition: all 0.3s ease;
+                left: 10px;
+                top: 6px;
+                cursor: pointer;
 
-				&--right {
-					left: auto;
-					right: 10px;
-				}
+                &--right {
+                    left: auto;
+                    right: 10px;
+                }
 
-				&:hover {
-					opacity: 0.3;
-				}
+                &:hover {
+                    opacity: 0.3;
+                }
 
-				&-img {
-					width: 100%;
-					height: 100%;
-				}
-			}
+                &-img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
 
-			&-text {
-
-			}
-		}
-	}
+            &-text {
+            }
+        }
+    }
 }
-
-
-
-
-
-
-
