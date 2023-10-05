@@ -8,10 +8,8 @@
     &__pic {
         display: block;
         position: relative;
-        max-width: 100%;
-        max-height: 204px;
+        height: 204px;
         width: 100%;
-        height: 100%;
         padding-bottom: 18px;
         margin-bottom: 18px;
         transition: all 0.3s ease;
@@ -47,6 +45,11 @@
         display: grid;
         position: relative;
 
+        &-wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+
         &-brand {
             margin-bottom: 3px;
             color: $accent;
@@ -57,12 +60,19 @@
         }
 
         &-subtitle {
+            margin-right: 20px;
+            max-height: 56px;
+            overflow: hidden;
         }
 
         &-price {
-            position: absolute;
-            right: 0;
-            bottom: 0;
+            line-height: 30px;
+            white-space: nowrap;
+            .price {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: flex-end;
+            }
         }
     }
 }
@@ -102,8 +112,8 @@
         border: 0;
         border-radius: 0;
         transition: all 300ms ease;
-        background: #ffffff;
         cursor: pointer;
+        display: block;
 
         @media screen and (max-width: 680px) {
             top: 12px;
@@ -117,6 +127,7 @@
         &-pic {
             width: 15px;
             height: 15px;
+            display: block;
 
             @media screen and (max-width: 680px) {
                 width: 12px;
@@ -126,34 +137,39 @@
             &-img {
                 width: 100%;
                 height: 100%;
+                display: block;
             }
         }
     }
 
     &__pic {
+        min-width: 320px;
         width: 320px;
-        height: 200px;
+        max-height: 250px;
         margin-right: 40px;
 
         @media screen and (max-width: 680px) {
             width: 100%;
-            height: auto;
             margin-right: 0;
+            max-height: initial;
         }
 
         &-img {
             width: 100%;
             height: 100%;
+            object-fit: contain;
+            display: block;
         }
     }
 
     &__content {
-        padding: 28px 0 28px 0;
+        padding: 28px 45px 28px 0;
         display: block;
         position: relative;
+        width: 100%;
 
         @media screen and (max-width: 680px) {
-            padding: 0 20px 0 20px;
+            padding-right: 0;
         }
 
         &-brand {
@@ -171,13 +187,6 @@
 
         &-price {
             margin-bottom: 19px;
-
-            @media screen and (max-width: 680px) {
-                margin-bottom: 0;
-                position: absolute;
-                right: 20px;
-                bottom: 49px;
-            }
         }
 
         &-container {
@@ -219,6 +228,78 @@
 
             &-text {
             }
+        }
+    }
+}
+
+.catalog__list .prp {
+    &__text {
+        &-wrap {
+            margin-top: 5px;
+        }
+        &-brand {
+            font-weight: 200;
+            margin-bottom: 0;
+        }
+        &-subtitle {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            max-height: 50px;
+        }
+        &-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-price .price {
+            flex-direction: row;
+            align-items: center;
+            del {
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                text-decoration-line: strikethrough;
+                margin-right: 6px;
+            }
+            ins {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+        }
+    }
+    &__pic {
+        height: 220px;
+        overflow: hidden;
+        position: relative;
+
+        &[data-price]::before {
+            content: attr(data-price);
+            position: absolute;
+            right: 0;
+            top: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $accent;
+            color: $white;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.14px;
+            padding: 4px 19.5px;
+            z-index: 1;
+        }
+        img {
+            transform: scale(1.1);
+        }
+        &::after {
+            display: none;
         }
     }
 }

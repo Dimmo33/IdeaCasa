@@ -40,35 +40,35 @@
                             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4783c839fe8d4daed6f06ac5bab82084f2ee2663f23cb4064f88da7842c4047e&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
                     </div>
                     <div class="map__content layout">
-                        <div class="map__card js-map-card active">
+                        <div class="map__card js-map-card active  js-map-toggle">
                             <h4 class="map__card-title title-4-bold">
                                 ТЦ Твинстор
                             </h4>
                             <p class="map__card-text text">
                                 г. Москва , Щипковский переулок, 4 А01-02-03
                             </p>
-                            <a class="map__card-call text" href="tel:+71234567890"> +7 (123) 456 78 90</a>
+                            <a class="map__card-call text" href="tel:+7 495 790 41 74">+7 495 790 41 74</a>
                             <p class="map__card-text map__card-text--bottom text">
                                 10:00 - 21:00
                             </p>
-                            <button class="map__card-btn js-map-toggle">
+                            <button class="map__card-btn">
                                 <span class="map__card-btn-text">
                                     Показать местоположение
                                 </span>
                             </button>
                         </div>
-                        <div class="map__card js-map-card">
+                        <div class="map__card js-map-card js-map-toggle">
                             <h4 class="map__card-title title-4-bold">
                                 ТЦ Mobel Expo
                             </h4>
                             <p class="map__card-text text">
                                 г. Москва , Нахимовский проспект 24, 3 вход, 1 этаж, павильон П19-20
                             </p>
-                            <a class="map__card-call text" href="tel:+71234567890"> +7 (123) 456 78 90</a>
+                            <a class="map__card-call text" href="tel:+7 966 333 08 80">+7 966 333 08 80</a>
                             <p class="map__card-text map__card-text--bottom text">
                                 10:00 - 21:00
                             </p>
-                            <button class="map__card-btn js-map-toggle">
+                            <button class="map__card-btn">
                                 <span class="map__card-btn-text">
                                     Показать местоположение
                                 </span>
@@ -88,7 +88,7 @@
                             Сделайте заказ прямо из дома в нашем интернет-магазине. Широкий выбор итальянской мебели и
                             аксессуаров для дома
                         </p>
-                        <a class="section-text__block-2-btn button button-2" href="#"> В каталог </a>
+                        <a class="section-text__block-2-btn button button-2" href="/shop"> В каталог </a>
                     </li>
                 </ul>
             </section>

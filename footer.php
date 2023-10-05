@@ -26,7 +26,7 @@
                     </div>
                     <div class="footer__body-info-top-contacts-email">
                         <a class="footer__body-info-top-contacts-text title-4-bold"
-                            href="mailto:info@ideecasa.ru"> info@ideecasa.ru </a>
+                            href="mailto:info@ideecasainterior.ru"> info@ideecasainterior.ru </a>
                     </div>
                 </div>
             </div>
@@ -52,24 +52,8 @@
                         <h4 class="title-4-bold footer__body-columns-list-item-subtitle">
                             Каталог
                         </h4>
-                        <a class="text footer__body-columns-list-item-text" href="#">
-                            Спальня
-                        </a>
-                        <a class="text footer__body-columns-list-item-text" href="#">
-                            Кухня и столовая
-                        </a>
-                        <a class="text footer__body-columns-list-item-text" href="#">
-                            Гостиная
-                        </a>
-                        <a class="text footer__body-columns-list-item-text" href="#">
-                            Для детей
-                        </a>
-                        <a class="text footer__body-columns-list-item-text" href="#">
-                            Декор
-                        </a>
-                        <a class="text footer__body-columns-list-item-text" href="#">
-                            Для дома
-                        </a>
+                        
+                       <?php ic_menu_footer();?>
                     </li>
                 </ul>
             </li>
@@ -108,7 +92,7 @@
     <div class="footer__bottom layout">
         <div class="footer__bottom-body">
             <div class="footer__bottom-body-content">
-                <a class="text footer__bottom-body-content-link" href="/policy/">
+                <a class="text footer__bottom-body-content-link" href="/privacy-policy/">
                     Политика конфиденциальности
                 </a>
                 <a class="text footer__bottom-body-content-link" href="#">
@@ -121,6 +105,17 @@
         </div>
     </div>
 </footer>
+<style>
+    .notiny-base.notiny-theme-wooac.notiny-with-img {
+        display: none !important;
+    }
+    .notiny-base.notiny-theme-wooac.notiny-with-img:last-child {
+        display: flex !important;
+    }
+    .screen-reader-text {
+        display: none;
+    }
+</style>
 
 <?php wp_footer(); ?>
 

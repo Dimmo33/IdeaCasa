@@ -3,7 +3,7 @@
     margin-bottom: 140px;
     @media screen and (max-width: 680px) {
         margin-top: 40px;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
     }
     &__pics {
         display: grid;
@@ -18,8 +18,12 @@
     }
     &__big {
         height: 100%;
+        max-height: calc(100vh - 102px);
         @media screen and (max-width: 680px) {
             height: 70vw;
+            .pht__pic {
+                height: 100%;
+            }
         }
     }
 
@@ -33,67 +37,20 @@
 
     &__sm {
         height: 100%;
-    }
-
-    &__prp {
-        margin-top: 40px;
-        @media screen and (min-width: 680px) {
-            display: none;
-        }
-        &-title {
-            font-weight: 400;
-            font-size: 30px;
-            line-height: 35px;
-            color: #bfbfbf;
-            margin-bottom: 22px;
-        }
-
-        &-body {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 20px;
-        }
-        .prp {
-            &__text {
-                &-brand {
-                    font-weight: 300;
-                    font-size: 12px;
-                    line-height: 14px;
-                }
-                &-subtitle {
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 19px;
-                    max-width: 65%;
-                    overflow: hidden;
-                    position: relative;
-                    &::after {
-                        content: "";
-                        display: block;
-                        right: 0;
-                        top: 0;
-                        height: 100%;
-                        width: 20px;
-                        position: absolute;
-                        background: linear-gradient(270deg, #ffffff 22.73%, rgba(255, 255, 255, 0) 100%);
-                    }
-                }
-                &-price {
-                    font-weight: 400;
-                    font-size: 10px;
-                    line-height: 12px;
-                    bottom: 2px;
-                }
+        max-height: calc(50vh - 51px - 20px);
+        @media screen and (max-width: 680px) {
+            .pht__pic {
+                height: 100%;
             }
         }
     }
 }
 
 .ph {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     @media screen and (max-width: 680px) {
         &__pic {
-            height: 80vw;
+            height: auto;
         }
     }
 }

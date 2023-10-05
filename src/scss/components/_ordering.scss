@@ -1,379 +1,379 @@
 .ordering {
-	margin-bottom: 140px;
+    margin-bottom: 140px;
 
-	&--var2 {
-		margin-bottom: 80px;
-	}
+    &__order-wrap {
+        position: sticky;
+        top: 140px;
+    }
 
-	&--var3 {
-		margin-bottom: 0;
-	}
+    &--var2 {
+        margin-bottom: 80px;
+    }
 
+    &--var3 {
+        margin-bottom: 0;
+    }
 
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
 
-	&__body {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-gap: 40px;
+        @media screen and (max-width: 1200px) {
+            grid-template-columns: (1fr 360px);
+        }
 
-		@media screen and (max-width: 1200px) {
-			grid-template-columns: (1fr 360px);
-		}
+        @media screen and (max-width: 1060px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
 
-		@media screen and (max-width: 1060px) {
-			grid-template-columns: repeat(1, 1fr);
-		}
+        &-column-1 {
+            display: block;
+            min-width: 760px;
 
-		&-column-1 {
-			display: block;
-			min-width: 760px;
+            @media screen and (max-width: 1200px) {
+                min-width: 100%;
+                width: 100%;
+                max-width: 100%;
+            }
 
-			@media screen and (max-width: 1200px) {
-				min-width: 100%;
-				width: 100%;
-				max-width: 100%;
-			}
+            @media screen and (max-width: 920px) {
+                min-width: auto;
+            }
+        }
 
-			@media screen and (max-width: 920px) {
-				min-width: auto;
-			}
-		}
+        &-column-2 {
+            @media screen and (max-width: 920px) {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
 
-		&-column-2 {
+    &__return {
+        width: fit-content;
+        display: flex;
+        margin-bottom: 22px;
 
-			@media screen and (max-width: 920px) {
-				display: block;
-				width: 100%;
-			}
-		}
-	}
+        &:hover &-text {
+            color: $gray4;
+        }
 
-	&__return {
-		width: fit-content;
-		display: flex;
-		margin-bottom: 22px;
-		
+        &:hover &-svg path {
+            stroke: $gray4;
+        }
 
-		&:hover &-text {
-			color: $gray4;
-		}
+        &-svg {
+            margin-top: 3px;
+            margin-right: 8px;
+        }
 
-		&:hover &-svg path {
-			stroke: $gray4;
-		}
+        &-svg path {
+            transition: stroke 0.3s ease;
+        }
 
-		&-svg {
-			margin-top: 3px;
-			margin-right: 8px;
-		}
+        &-text {
+            color: $gray3;
+            transition: color 0.3s ease;
+        }
+    }
 
-		&-svg path {
-			transition: stroke 0.3s ease;
-		}
+    &__delivery {
+        width: 100%;
 
-		&-text {
-			color: $gray3;
-			transition: color 0.3s ease;
-		}
-	}
+        &-subtitle {
+            margin-bottom: 40px;
+            margin-top: 80px;
 
-	&__delivery {
-		width: 100%;
+            @media screen and (max-width: 920px) {
+                margin-bottom: 22px;
 
-		&-subtitle {
-			margin-bottom: 40px;
+                &--var2 {
+                    margin-bottom: 40px;
+                }
+            }
+        }
 
-			@media screen and (max-width: 920px) {
-				margin-bottom: 22px;
+        &-list {
+            width: 100%;
+            display: flex;
+            grid-template-columns: repeat(3, 1fr);
+            margin-bottom: 12px;
 
-				&--var2 {
-					margin-bottom: 40px;
-				}
-			}
-		}
+            @media screen and (max-width: 920px) {
+                grid-template-columns: repeat(1, 1fr);
+                display: grid;
+            }
 
-		&-list {
-			width: 100%;
-			display: flex;
-			grid-template-columns: repeat(3, 1fr);
-			margin-bottom: 12px;
+            &-item {
+                width: 100%;
+                margin-right: -1px;
+                border: 1px solid $gray2;
+                transition: all 0.3s ease;
 
-			@media screen and (max-width: 920px) {
-				grid-template-columns: repeat(1, 1fr);
-				display: grid;
-			}
+                @media screen and (max-width: 920px) {
+                    grid-template-columns: repeat(1, 1fr);
+                    display: grid;
+                    margin-right: 0;
+                    margin-bottom: -1px;
+                }
 
-			&-item {
-				
-				width: 100%;
-				margin-right: -1px;
-				border: 1px solid $gray2;
-				transition: all 0.3s ease;
+                &.active {
+                    background-color: $accent;
+                    border-color: $accent;
+                    .ordering__delivery-list-item-content-subtitle {
+                        color: $white;
+                    }
 
-				@media screen and (max-width: 920px) {
-					grid-template-columns: repeat(1, 1fr);
-					display: grid;
-					margin-right: 0;
-					margin-bottom: -1px;
-				}
+                    .ordering__delivery-list-item-content-text {
+                        color: $white;
+                    }
+                }
 
-				&.active {
-					background-color: $accent;
-					border-color: $accent;
-					.ordering__delivery-list-item-content-subtitle {
-						color: $white;
-					}
+                &-content {
+                    padding: 16px 14px 16px 22px;
+                    width: 100%;
+                    display: block;
+                    background-color: transparent;
+                    border: none;
+                    text-align: start;
+                    cursor: pointer;
 
-					.ordering__delivery-list-item-content-text {
-						color: $white;
-					}
-				}
-				
-				&-content {
-					padding: 16px 14px 16px 22px;
-					width: 100%;
-					display: block;
-					background-color: transparent;
-					border: none;
-					text-align: start;
-					cursor: pointer;
+                    @media screen and (max-width: 920px) {
+                        display: grid;
+                    }
 
-					@media screen and (max-width: 920px) {
-						display: grid;
-					}
-					
-					&-subtitle {
-						margin-bottom: 4px;
-						color: $gray4;
-						transition: all 0.3s ease;
-					}
+                    &-subtitle {
+                        margin-bottom: 4px;
+                        color: $gray4;
+                        transition: all 0.3s ease;
+                    }
 
-					&-text {
-						white-space: nowrap;
-						transition: all 0.3s ease;
-						color: $gray4;
-					}
-				}
-			}
-		}
+                    &-text {
+                        white-space: nowrap;
+                        transition: all 0.3s ease;
+                        color: $gray4;
+                    }
+                }
+            }
+        }
 
-		&-text {
-			color: $gray4;
-		}
-	}
+        &-text {
+            color: $gray4;
+        }
+    }
 
-	&__address {
-		width: 100%;
+    &__address {
+        width: 100%;
 
-		&-container {
-			display: flex;
-			width: 100%;
-			border: 1px $accent solid;
-			padding: 35px 28px 28px 28px;
-			margin-top: 40px;
+        &-container {
+            display: flex;
+            width: 100%;
+            border: 1px $accent solid;
+            padding: 35px 28px 28px 28px;
+            margin-top: 40px;
 
-			@media screen and (max-width: 680px) {
-				padding: 15px;
-			}
+            @media screen and (max-width: 680px) {
+                padding: 15px;
+            }
 
-			&-mark {
-				font-size: 49px;
-				font-weight: 400;
-				line-height: 45px;
-				letter-spacing: 0em;
-				color: $accent;
-				margin-right: 44px;
+            &-mark {
+                font-size: 49px;
+                font-weight: 400;
+                line-height: 45px;
+                letter-spacing: 0em;
+                color: $accent;
+                margin-right: 44px;
 
-				@media screen and (max-width: 680px) {
-					min-height: 100%;
-					margin-right: 10px;
-				}
-			}
+                @media screen and (max-width: 680px) {
+                    min-height: 100%;
+                    margin-right: 10px;
+                }
+            }
 
-			&-text {
-				color: $accent;
-			}
-		}
-	}
+            &-text {
+                color: $accent;
+            }
+        }
+    }
 
-	&__input {
-		color: $gray3;
-		border: 1px $gray2 solid;
-		padding: 14px;
-		width: 100%;
-		position: relative;
-		z-index: 0;
+    &__input {
+        color: #070605;
+        border: 1px $gray2 solid;
+        padding: 14px;
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        &-wrap {
+            margin-bottom: 22px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &.error,
+        & + span {
+            color: rgba(255, 0, 0, 0.454);
+            border-color: rgba(255, 0, 0, 0.454);
+        }
 
-		&--var2 {
-			// height: 100%;
-		}
+        &--var2 {
+            // height: 100%;
+        }
 
-		&--var3 {
-			margin-bottom: 22px;
+        &--var3 {
+            margin-bottom: 22px;
 
-			&--bottom {
-				margin-bottom: 0;
-			}
-		}
+            &--bottom {
+                margin-bottom: 0;
+            }
+        }
 
-		&-text {
-			margin-bottom: 6px;
-		}
+        &-text {
+            margin-bottom: 6px;
+        }
 
-		&-list {
-			margin-top: 28px;
-			display: flex;
-			grid-template-columns: (4, 1fr);
-			grid-gap: 28px;
+        &-list {
+            margin-top: 28px;
+            display: flex;
+            grid-template-columns: (4, 1fr);
+            grid-gap: 28px;
 
-			@media screen and (max-width: 680px) {
-				grid-template-columns: repeat(2, 1fr);
-				display: grid;
-			}
+            @media screen and (max-width: 680px) {
+                grid-template-columns: repeat(2, 1fr);
+                display: grid;
+            }
 
-			&--var2 {
-				grid-template-columns: (2, 1fr);
-				grid-gap: 40px;
+            &--var2 {
+                grid-template-columns: (2, 1fr);
+                grid-gap: 40px;
 
-				@media screen and (max-width: 680px) {
-					grid-template-columns: repeat(1, 1fr);
-					display: grid;
-				}
-			}
-	
-			&-item {
-				width: 100%;
-			}
-		}
-	}
+                @media screen and (max-width: 680px) {
+                    grid-template-columns: repeat(1, 1fr);
+                    display: grid;
+                }
+            }
 
-	&__payment {
+            &-item {
+                width: 100%;
+            }
+        }
+    }
 
-		&-btn {
-			width: 100%;
-			display: flex;
-			text-align: start;
-			padding: 15px 20px 15px 20px;
-			background-color: transparent;
-			cursor: pointer;
-			border: 1px $gray2 solid;
-			margin-bottom: 12px;
-			transition: all 0.3s ease;
+    &__payment {
+        &-btn {
+            width: 100%;
+            display: flex;
+            text-align: start;
+            padding: 15px 20px 15px 20px;
+            background-color: transparent;
+            cursor: pointer;
+            border: 1px $gray2 solid;
+            margin-bottom: 12px;
+            transition: all 0.3s ease;
 
-			&--bottom {
-				margin-bottom: 140px;
-			}
+            &--bottom {
+                margin-bottom: 140px;
+            }
 
-			&.active {
-				background-color: $accent;
-				border: 1px $accent solid;
-			}
+            &.active {
+                background-color: $accent;
+                border: 1px $accent solid;
+            }
 
-			&.active &-pic-img {
-				display: block;
-			}
+            &.active &-pic-img {
+                display: block;
+            }
 
-			&.active &-text {
-				color: $white;
-			}
+            &.active &-text {
+                color: $white;
+            }
 
-			&-pic {
-				padding: 1px;
-				width: 20px;
-				height: 20px;
-				border: 1px $gray2 solid;
-				margin-right: 14px;
-				
-				&-img {
-					display: none;
-					width: 100%;
-					height: 100%;
-				}
-			}
+            &-pic {
+                padding: 1px;
+                width: 20px;
+                height: 20px;
+                border: 1px $gray2 solid;
+                margin-right: 14px;
 
-			&-text {
+                &-img {
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
 
-			}
-		}
-	}
+            &-text {
+            }
+        }
+    }
 
-	&__price {
-		padding: 30px;
-		// position: relative;
-		width: 100%;
-		display: block;
-		border: 1px solid $gray2;
-		margin-bottom: 11px;
+    &__price {
+        padding: 30px;
+        // position: relative;
+        width: 100%;
+        display: block;
+        border: 1px solid $gray2;
+        margin-bottom: 11px;
 
-		@media screen and (max-width: 680px) {
-			// border: none;
-			display: block;
-			margin-bottom: 60px;
-		}
+        @media screen and (max-width: 680px) {
+            display: block;
+            margin-bottom: 50px;
+        }
 
+        &-total {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
 
-		&-total {
-			position: relative;
-			display: flex;
-			align-items: center;
-			margin-bottom: 12px;
-	
-			&--var2 {
-				margin-bottom: 8px;
-			}
-	
-			&--var3 {
-				margin-bottom: 0;
-			}
-	
-			&-right {
-				position: absolute;
-				right: 0;
-				bottom: 0;
-			}
-		}
-	
-		&-btn {
-			width: 100%;
-	
-			@media screen and (max-width: 920px) {
-				position: absolute;
-				bottom: 0;
-				left: 0;
-			}
-		}
-	
-		&-help {
-			margin-top: 22px;
-	
-			&-subtitle {
-				color: $accent;
-				margin-bottom: 12px;
-			}
-	
-			&-link {
-				display: flex;
-	
-				&-text {
-					color: $accent;
-					transition: all 0.3s ease;
-	
-					&:hover {
-						color: $hover-accent;
-					}
-				}
-	
-				&-content {
-					margin: 0 11px 0 11px;
-					color: $accent;
-				}
-			}
-		}
-	}
+            &--var2 {
+                margin-bottom: 8px;
+            }
+
+            &--var3 {
+                margin-bottom: 0;
+            }
+
+            &-right {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+
+        &-btn {
+            width: 100%;
+        }
+
+        &-help {
+            margin-top: 22px;
+
+            &-subtitle {
+                color: $accent;
+                margin-bottom: 12px;
+            }
+
+            &-link {
+                display: flex;
+
+                &-text {
+                    color: $accent;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: $hover-accent;
+                    }
+                }
+
+                &-content {
+                    margin: 0 11px 0 11px;
+                    color: $accent;
+                }
+            }
+        }
+    }
 }
 
-
-
 .main {
-	position: relative;
+    position: relative;
 }

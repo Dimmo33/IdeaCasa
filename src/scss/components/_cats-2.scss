@@ -9,11 +9,11 @@
     &__slider {
         .swiper-wrapper {
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             grid-gap: 40px;
 
             @media screen and (max-width: 920px) {
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(3, 1fr);
             }
 
             @media screen and (max-width: 550px) {
@@ -42,7 +42,6 @@
     &__link {
         display: block;
         width: 100%;
-        user-select: none;
         &-pic {
             display: block;
             width: 100%;
@@ -51,6 +50,7 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
+            display: block;
         }
         &-text {
             display: block;

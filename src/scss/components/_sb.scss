@@ -1,0 +1,134 @@
+.sb {
+    transform: translateY(-100%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    transition: transform 0.3s ease;
+    z-index: 100;
+    background-color: $white;
+    &.active {
+        transform: translateY(0);
+    }
+
+    &__top {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 1200px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    &__top-logo {
+        @media screen and (max-width: 920px) {
+            width: 80px;
+            height: 45px;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &__search {
+        width: 100%;
+        &-close {
+            margin-left: auto;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+    }
+    .dgwt-wcas-search-wrapp {
+        max-width: 100%;
+    }
+    .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp input[type="search"].dgwt-wcas-search-input {
+        border-radius: 0;
+        border: none;
+        background: none;
+        padding: 0;
+        border-bottom: 1px solid #e3e3e3;
+        max-width: 98%;
+    }
+    .dgwt-wcas-style-pirx.dgwt-wcas-search-filled .dgwt-wcas-sf-wrapp button.dgwt-wcas-search-submit {
+        display: none !important;
+    }
+
+    .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp {
+        border-radius: 0;
+    }
+    .dgwt-wcas-style-pirx .dgwt-wcas-preloader {
+        width: 60px !important;
+        height: 20px !important;
+        top: 14px;
+        margin-right: 0;
+    }
+
+    .dgwt-wcas-preloader.dgwt-wcas-close {
+        svg {
+            display: none;
+        }
+        &::before {
+            content: "очистить";
+            position: static;
+            font-size: 14px;
+            color: #969696;
+        }
+    }
+
+    .dgwt-wcas-search-submit {
+        display: none !important;
+    }
+}
+.layout {
+}
+
+.dgwt-wcas-darkened-overlay > div {
+    top: 80px !important;
+}
+
+.dgwt-wcas-suggestions-wrapp {
+    left: 0 !important;
+    width: 100% !important;
+    margin-top: 20px;
+}
+
+.dgwt-wcas-has-headings .dgwt-wcas-suggestion,
+.dgwt-wcas-has-headings .dgwt-wcas-suggestion.dgwt-wcas-suggestion-headline,
+.dgwt-wcas-has-headings .dgwt-wcas-suggestion.dgwt-wcas-suggestion-tax,
+.dgwt-wcas-suggestion.dgwt-wcas-suggestion-no-border-bottom,
+body:not(.dgwt-wcas-is-details) .dgwt-wcas-suggestion:last-child,
+.dgwt-wcas-suggestion-nores {
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dgwt-wcas-has-headings .dgwt-wcas-suggestion.dgwt-wcas-suggestion-tax.dgwt-wcas-suggestion-selected,
+.dgwt-wcas-has-headings .dgwt-wcas-suggestion.dgwt-wcas-suggestion-tax:hover {
+    text-decoration: none;
+}
+
+.dgwt-wcas-si {
+    width: 120px;
+    height: 90px;
+    min-width: 120px;
+}
+.dgwt-wcas-si img {
+    border: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    padding: 0;
+    margin: 0;
+    max-height: 100%;
+}
+
+.dgwt-wcas-suggestion strong {
+    color: $accent;
+}

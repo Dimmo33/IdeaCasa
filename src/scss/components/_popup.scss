@@ -1,0 +1,233 @@
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    &.active {
+        opacity: 1;
+        pointer-events: all;
+    }
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000c6;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+        overflow-y: scroll;
+        padding: 5vh 0;
+    }
+    &__body {
+        max-width: 760px;
+        margin: auto;
+        background: #ffffff;
+        position: relative;
+        // @media screen and (max-width: 830px) {
+        //     padding-left: 20px;
+        //     padding-right: 20px;
+        // }
+    }
+
+    &__top {
+        padding-top: 144px;
+        padding-bottom: 40px;
+        padding-left: 140px;
+        padding-right: 140px;
+        background: url("./../images/popup.jpg") no-repeat;
+        background-size: cover;
+        @media screen and (max-width: 830px) {
+            padding: 50px 30px;
+        }
+    }
+
+    &__title {
+        color: $white;
+        text-align: center;
+        margin-bottom: 4px;
+    }
+
+    &__subtitle {
+        color: $white;
+        text-align: center;
+    }
+
+    &__form {
+        max-width: 360px;
+        width: 100%;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        @media screen and (max-width: 830px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .wpcf7-not-valid-tip {
+            margin-top: 5px;
+            color: $accent;
+        }
+        .wpcf7-response-output {
+            border: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            margin-top: 10px !important;
+        }
+        .wpcf7-spinner {
+            display: none !important;
+        }
+        label {
+            display: block;
+            span {
+                color: #070605;
+                font-size: 16px;
+                letter-spacing: 0.16px;
+                display: block;
+                margin-bottom: 6px;
+            }
+            .wpcf7-form-control-wrap {
+                margin-bottom: 0;
+            }
+            .preorder-form-input {
+                font-size: 16px;
+                letter-spacing: 0.16px;
+                padding: 14px;
+                border: 1px solid#E3E3E3;
+                outline: none;
+                width: 100%;
+            }
+        }
+
+        .pre-order-under-text {
+            color: #bfbfbf;
+            font-size: 14px;
+            letter-spacing: 0.14px;
+            margin-top: 12px;
+            display: block;
+            a {
+                color: #bfbfbf;
+                text-decoration: underline;
+            }
+        }
+
+        [data-name="product-url"] {
+            display: none;
+        }
+
+        input[type="submit"] {
+            padding: 10px 28px;
+            display: block;
+            width: 100%;
+            margin-top: 22px;
+            border: none;
+            background-color: #9a8873;
+            transition: all 0.3s ease;
+            color: $white;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            &:hover {
+                background-color: #766756;
+            }
+        }
+    }
+
+    &__btn-close {
+        border: none;
+        background: none;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        cursor: pointer;
+        svg {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        &:hover {
+            svg {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .pre-order {
+        max-width: 360px;
+        width: 100%;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        @media screen and (max-width: 830px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &-text {
+            color: #bfbfbf;
+            font-size: 20px;
+        }
+        &-list {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+
+    &__social-text {
+    }
+
+    &__social-list {
+    }
+
+    &__social-list-item {
+    }
+}
+.js-pre-order {
+}
+.wpcf7 {
+}
+.js {
+}
+.screen-reader-response {
+}
+.wpcf7-form {
+}
+.init {
+}
+.wpcf7-form-control-wrap {
+}
+.wpcf7-form-control {
+}
+.wpcf7-text {
+}
+.wpcf7-validates-as-required {
+}
+.preorder-form-input {
+}
+.wpcf7-url {
+}
+.wpcf7-validates-as-url {
+}
+.hidden {
+}
+.has-spinner {
+}
+.wpcf7-submit {
+}
+.wpcf7-spinner {
+}
+.wpcf7-response-output {
+}

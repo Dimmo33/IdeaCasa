@@ -82,7 +82,9 @@
   },
   "target": "web",
   "dependencies": {
+    "imask": "^7.0.1",
     "normalize.css": "^8.0.1",
+    "smoothscroll-polyfill": "^0.4.4",
     "swiper": "^9.4.1"
   }
 }

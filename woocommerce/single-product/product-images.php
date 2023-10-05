@@ -160,21 +160,23 @@ $loading_gallery_class = wc_string_to_bool( woo_variation_gallery()->get_option(
 
 					<?php if ( $has_post_thumbnail && wc_string_to_bool( woo_variation_gallery()->get_option( 'lightbox', 'yes' ) ) ): ?>
 						<a href="#" class="woo-variation-gallery-trigger woo-variation-gallery-trigger-position-<?php echo woo_variation_gallery()->get_option( 'zoom_position', 'top-right', 'woo_variation_gallery_zoom_position' ) ?>">
-							<span class="dashicons dashicons-search"></span>
+							<!-- <span class="dashicons dashicons-search"> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" height="48" width="48"><g id="magnifying-glass--glass-search-magnifying"><path id="Vector" stroke="#3e3e3e" stroke-linecap="round" stroke-linejoin="round" d="M6 11.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"></path><path id="Vector_2" stroke="#3e3e3e" stroke-linecap="round" stroke-linejoin="round" d="M13.5 13.5 10 10"></path></g></svg>
+                            <!-- </span> -->
 						</a>
 					<?php endif; ?>
 
 					<div class="woo-variation-gallery-slider" data-slick='<?php echo wc_esc_json( wp_json_encode( $gallery_slider_js_options ) ); // WPCS: XSS ok. ?>'>
 						<?php
-						// // Main  Image
-						// if ( $has_post_thumbnail ) {
-						// 	echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', woo_variation_gallery()->get_frontend()->get_gallery_image_html( $product, $post_thumbnail_id, array(
-						// 		'is_main_thumbnail'  => true,
-						// 		'has_only_thumbnail' => $only_has_post_thumbnail
-						// 	) ), $post_thumbnail_id );
-						// } else {
-						// 	echo sprintf( '<div class="wvg-gallery-image wvg-gallery-image-placeholder"><div><div class="wvg-single-gallery-image-container"><img src="%s" alt="%s" class="wp-post-image" /></div></div></div>', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
-						// }
+						// Main  Image
+						if ( $has_post_thumbnail ) {
+							echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', woo_variation_gallery()->get_frontend()->get_gallery_image_html( $product, $post_thumbnail_id, array(
+								'is_main_thumbnail'  => true,
+								'has_only_thumbnail' => $only_has_post_thumbnail
+							) ), $post_thumbnail_id );
+						} else {
+							echo sprintf( '<div class="wvg-gallery-image wvg-gallery-image-placeholder"><div><div class="wvg-single-gallery-image-container"><img src="%s" alt="%s" class="wp-post-image" /></div></div></div>', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
+						}
 
 
 						// Gallery Image
@@ -212,4 +214,6 @@ $loading_gallery_class = wc_string_to_bool( woo_variation_gallery()->get_option(
 			</div> <!-- .woo-variation-gallery-container -->
 		</div> <!-- .woo-variation-gallery-wrapper -->
 	</div> <!-- .woo-variation-product-gallery -->
-<?php do_action( 'woo_variation_product_gallery_end', $product ); ?>
+    
+<?php
+do_action( 'woo_variation_product_gallery_end', $product ); ?>

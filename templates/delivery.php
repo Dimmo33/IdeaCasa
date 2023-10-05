@@ -66,7 +66,7 @@
                             Варианты оплаты: наличными или картой при получении
                         </p>
                         <p class="section-block__cell-text text">
-                            Для наших клиентов <span class="accent-color">предусмотрена беспланая
+                            Для наших клиентов <span class="accent-color">предусмотрена бесплатная
                                 парковка</span>
                         </p>
                         <p class="text">

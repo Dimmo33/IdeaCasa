@@ -1,330 +1,318 @@
 .title {
-	font-weight: 300;
-	font-size: 49px;
-	line-height: 45px;
-	color: $black;
+    font-weight: 300;
+    font-size: 49px;
+    line-height: 1.2;
+    color: $black;
 
-	@media screen and (max-width: 920px) {
-		font-size: 32px;
-		line-height: 38px;
-	}
+    @media screen and (max-width: 920px) {
+        font-size: 32px;
+        line-height: 38px;
+    }
 
-	&-white {
-		font-weight: 300;
-		font-size: 49px;
-		line-height: 45px;
-		color: $white;
+    &-white {
+        font-weight: 300;
+        font-size: 49px;
+        line-height: 45px;
+        color: $white;
 
-		@media screen and (max-width: 920px) {
-			font-size: 32px;
-			line-height: 38px;
-		}
-	}
+        @media screen and (max-width: 920px) {
+            font-size: 32px;
+            line-height: 38px;
+        }
+    }
 }
 
 .title-2 {
-	font-weight: 300;
-	font-size: 32px;
-	line-height: 38px;
-	color: $black;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+    color: $black;
 
-	&-white {
-		font-weight: 300;
-		font-size: 32px;
-		line-height: 38px;
-		color: $white;
-	}
+    &-white {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 38px;
+        color: $white;
+    }
 
-	@media screen and (max-width: 920px) {
-		font-size: 32px;
-		line-height: 38px;
-	}
+    @media screen and (max-width: 920px) {
+        font-size: 32px;
+        line-height: 38px;
+    }
 
-	&-var2 {
-		font-weight: 300;
-		font-size: 32px;
-		line-height: 38px;
-		color: $black;
+    &-var2 {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 38px;
+        color: $black;
 
-		@media screen and (max-width: 380px) {
-			font-size: 28px;
-			line-height: 38px;
-		}
-	}
-
+        @media screen and (max-width: 380px) {
+            font-size: 28px;
+            line-height: 38px;
+        }
+    }
 }
 
 .title-3 {
-	font-weight: 300;
-	font-size: 24px;
-	line-height: 28px;
-	color: $black;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: $black;
 }
 
 .title-4 {
-	font-weight: 300;
-	font-size: 20px;
-	line-height: 23px;
-	color: $black;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: $black;
 
-	&-white {
-		font-weight: 300;
-		font-size: 20px;
-		line-height: 23px;
-		color: $white;
-	}
+    &-white {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23px;
+        color: $white;
+    }
 
-	&-hover-acc {
-		font-weight: 300;
-		font-size: 20px;
-		line-height: 23px;
-		color: $black;
-		
+    &-hover-acc {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23px;
+        color: $black;
 
-		&:hover {
-			color: $accent;
-		}
-	}
+        &:hover {
+            color: $accent;
+        }
+    }
 }
 
 .title-4-bold {
-	font-weight: 500;
-	font-size: 20px;
-	line-height: 23px;
-	color: $black;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: $black;
 
-	&-white {
-		font-weight: 500;
-		font-size: 20px;
-		line-height: 23px;
-		color: $white;
-	}
-
+    &-white {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        color: $white;
+    }
 }
 
 .text {
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 19px;
-	letter-spacing: 0.01em;
-	color: $black;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: $black;
 
-	&-accent {
-		font-weight: 300;
-		font-size: 16px;
-		line-height: 19px;
-		letter-spacing: 0.01em;
-		color: $accent;
-	}	
+    &-accent {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        color: $accent;
+    }
 
-	&-gray4 {
-		font-weight: 300;
-		font-size: 16px;
-		line-height: 19px;
-		letter-spacing: 0.01em;
-		color: $gray4;
-	}
+    &-gray4 {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        color: $gray4;
+    }
 
-	&-white {
-		font-weight: 300;
-		font-size: 16px;
-		line-height: 19px;
-		letter-spacing: 0.01em;
-		color: $white;
-	}
+    &-white {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        color: $white;
+    }
 
-	&-hover-acc {
-		font-weight: 300;
-		font-size: 16px;
-		line-height: 19px;
-		letter-spacing: 0.01em;
-		color: $black;
-		transition: all 300ms ease;
+    &-hover-acc {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        color: $black;
+        transition: all 300ms ease;
 
-		&:hover {
-			color: $accent;
-		}
-	}
+        &:hover {
+            color: $accent;
+        }
+    }
 }
 
 .price {
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 19px;
-	color: $black;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $black;
+    ins {
+        text-decoration: none;
+    }
+    del {
+        color: #bfbfbf;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 }
 
 .brand {
-	font-weight: 200;
-	font-size: 16px;
-	color: $black;
+    font-weight: 200;
+    font-size: 16px;
+    color: $black;
 }
 
 .button {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 19px;
-	color: $black;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $black;
 }
 
 .text-2 {
-	font-weight: 300;
-	font-size: 14px;
-	line-height: 16px;
-	letter-spacing: 0.01em;
-	color: $black;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: $black;
 }
 
 .old-price {
-	font-weight: 300;
-	font-size: 12px;
-	line-height: 14px;
-	color: $black;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: $black;
 }
 
 .button-1 {
-	text-align: center;
-	padding: 10px 28px 10px 28px;
-	background-color: $accent;
-	transition: all 300ms ease;
-	max-width: fit-content;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 19px;
-	color: $white;
-	border-width: 1px;
-	border-color: $accent;
-	border-style: solid;
-	cursor: pointer;
-	
-	&:hover {
-		background-color: $hover-accent;
-		border-color: $hover-accent;
-	}
+    text-align: center;
+    padding: 10px 28px 10px 28px;
+    background-color: $accent;
+    transition: all 300ms ease;
+    max-width: fit-content;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $white;
+    border-width: 1px;
+    border-color: $accent;
+    border-style: solid;
+    cursor: pointer;
 
-	@media screen and (max-width: 920px) {
-		max-width: none;
-		width: 100%;
-	}
+    &:hover {
+        background-color: $hover-accent;
+        border-color: $hover-accent;
+    }
+
+    @media screen and (max-width: 920px) {
+        max-width: none;
+        width: 100%;
+    }
 }
 
 .button-2 {
-	text-align: center;
-	padding: 10px 28px 10px 28px;
-	background-color: $white;
-	transition: all 300ms ease;
-	max-width: fit-content;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 19px;
-	color: $accent;
-	border-width: 1px;
-	border-color: $accent;
-	border-style: solid;
-	cursor: pointer;
+    text-align: center;
+    padding: 10px 28px 10px 28px;
+    background-color: $white;
+    transition: all 300ms ease;
+    max-width: fit-content;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $accent;
+    border-width: 1px;
+    border-color: $accent;
+    border-style: solid;
+    cursor: pointer;
 
-	&:hover {
-		background-color: $accent;
-		color: $white;
-	}
+    &:hover {
+        background-color: $accent;
+        color: $white;
+    }
 
-	&-width {
-		text-align: center;
-		padding: 10px 28px 10px 28px;
-		background-color: $white;
-		transition: all 300ms ease;
-		max-width: fit-content;
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 19px;
-		color: $accent;
-		border-width: 1px;
-		border-color: $accent;
-		border-style: solid;
-		
-		&:hover {
-			background-color: $accent;
-			color: $white;
-		}
+    &-width {
+        text-align: center;
+        padding: 10px 28px 10px 28px;
+        background-color: $white;
+        transition: all 300ms ease;
+        max-width: fit-content;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $accent;
+        border-width: 1px;
+        border-color: $accent;
+        border-style: solid;
 
-		@media screen and (max-width: 920px) {
-			max-width: none;
-			width: 100%;
-		}
-	}
+        &:hover {
+            background-color: $accent;
+            color: $white;
+        }
+
+        @media screen and (max-width: 920px) {
+            max-width: none;
+            width: 100%;
+        }
+    }
 }
 
 .call-email {
-	width: fit-content;
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 19px;
-	letter-spacing: 0.01em;
-	color: $black;
-	transition: all 300ms ease;
-	border-width: 0px 0px 1px 0px;
-	border-style: solid;
-	border-color: $black;
+    width: fit-content;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: $black;
+    transition: all 300ms ease;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: $black;
 
-	&:hover {
-		color: $accent;
-		border-color: $accent;
-	}
+    &:hover {
+        color: $accent;
+        border-color: $accent;
+    }
 }
 
 .call-email-white {
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 19px;
-	letter-spacing: 0.01em;
-	color: $white;
-	transition: all 300ms ease;
-	border-width: 0px 0px 1px 0px;
-	border-style: solid;
-	border-color: $white;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: $white;
+    transition: all 300ms ease;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: $white;
 
-	&:hover {
-		color: $hover-accent;
-		border-color: $hover-accent;
-		color: $hover-accent;
-	}
+    &:hover {
+        color: $hover-accent;
+        border-color: $hover-accent;
+        color: $hover-accent;
+    }
 }
 
 .box {
-	background-color: $white;
-	border-color: black;
-	border-width: 1px;
-	border-style: solid;
-	padding: 40px;
+    background-color: $white;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    padding: 40px;
 
-	&-accent {
-		background-color: $accent;
-		border-color: $accent;
-		border-width: 1px;
-		border-style: solid;
-		padding: 40px;
-	}
+    &-accent {
+        background-color: $accent;
+        border-color: $accent;
+        border-width: 1px;
+        border-style: solid;
+        padding: 40px;
+    }
 }
 
 .accent-color {
-	color: $accent;
+    color: $accent;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

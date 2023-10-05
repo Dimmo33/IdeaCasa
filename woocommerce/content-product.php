@@ -31,7 +31,11 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 ?>
 <li class="catalog__list-item">
     <a href="<?php echo $link;?>" class="prp">
-        <span class="prp__pic">
+        <span class="prp__pic" <?php 
+            if (get_field('razmer_skidki')) {
+                ?>data-price="<?php echo '-'.get_field('razmer_skidki').'%';?>"<?php
+            }        
+        ?>>
             <img class="prp__pic-img" src="<?php echo $p_image_url?>" alt="Фото" <?php 
             $prpSize = get_field('prp-size', $product_id);
             if ($prpSize) {
@@ -40,14 +44,25 @@ if ( empty( $product ) || ! $product->is_visible() ) {
         ?>>
         </span>
         <span class="prp__text">
-            <span class="prp__text-brand text">
-                <?php echo $brand;?>
+            <span class="prp__text-top">
+                <span class="prp__text-brand text">
+                    <?php echo $brand;?>
+                </span>
+                <span class="prp__text-price text">
+                    <?php  
+                        if ($product->get_price() > 1) {
+                            woocommerce_template_single_price();
+                        }
+                    ?>
+                </span>
             </span>
-            <span class="prp__text-subtitle title-3">
-                <?php echo $product->get_name();?>
-            </span>
-            <span class="prp__text-price text">
-                <?php echo $product->get_regular_price();?>
+            <span class="prp__text-wrap">
+                <span class="prp__text-subtitle title-3">
+                    <?php 
+                    
+                        echo $product->get_name();
+                    ?>
+                </span>
             </span>
         </span>
     </a>

@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IdeeCasa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+<script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
+
+<body>
+    <div class="page">
+        <header class="header js-header">
+            <div class="header__body layout">
+                <div class="header__logo">
+                    <img class="header__logo-svg" src="/images/logo-white.svg" alt="">
+                </div>
+
+
+                <div class="header__menu">
+                    <div class="header__mobile js-header-mobile">
+                        <nav class="header__nav">
+                            <ul class="header__list">
+                                <li class="header__list-item">
+                                    <a class="header__list-item-button text-white" href="#">Главная</a>
+                                </li>
+                                <li class="header__list-item">
+                                    <button type="button"
+                                        class="header__list-item-button text-white js-header-menu-toggle">Каталог</button>
+                                </li>
+                                <li class="header__list-item">
+                                    <a class="header__list-item-button text-white" href="#">О нас</a>
+                                </li>
+                                <li class="header__list-item">
+                                    <a class="header__list-item-button text-white" href="#">Где купить</a>
+                                </li>
+                                <li class="header__list-item">
+                                    <a class="header__list-item-button text-white" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header__info">
+                    <div class="header__info-call">
+                        <a href="tel:+74951544142">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_533_961)">
+                                    <path
+                                        d="M7.48585 18.5715C6.6061 19.139 5.55775 19.3863 4.51709 19.2719C3.47642 19.1574 2.50691 18.6881 1.77156 17.9429L1.1287 17.3143C0.846869 17.026 0.689066 16.6389 0.689066 16.2357C0.689066 15.8326 0.846869 15.4454 1.1287 15.1572L3.85728 12.4572C4.14314 12.1762 4.5279 12.0188 4.9287 12.0188C5.32951 12.0188 5.71427 12.1762 6.00013 12.4572C6.28841 12.739 6.67555 12.8968 7.0787 12.8968C7.48186 12.8968 7.869 12.739 8.15728 12.4572L12.443 8.17145C12.586 8.03056 12.6995 7.86265 12.777 7.67749C12.8545 7.49233 12.8944 7.29361 12.8944 7.09288C12.8944 6.89216 12.8545 6.69344 12.777 6.50827C12.6995 6.32311 12.586 6.1552 12.443 6.01431C12.1621 5.72845 12.0046 5.34368 12.0046 4.94288C12.0046 4.54208 12.1621 4.15732 12.443 3.87145L15.1573 1.15717C15.4456 0.875332 15.8327 0.717529 16.2358 0.717529C16.639 0.717529 17.0261 0.875332 17.3144 1.15717L17.943 1.80002C18.6882 2.53537 19.1575 3.50489 19.272 4.54555C19.3865 5.58621 19.1391 6.63456 18.5716 7.51431C15.6144 11.8725 11.8517 15.6255 7.48585 18.5715Z"
+                                        stroke="white" stroke-width="1.42857" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_533_961">
+                                        <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20 0)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="title-4-white">
+                                +7 (495) 154 41 42
+                            </span>
+                        </a>
+                    </div>
+                    <a class="header__info-pic" href="#">
+                        <svg class="header__info-pic-svg" width="20" height="18" viewBox="0 0 20 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.5427 6.57134H2.45701C2.24275 6.567 2.03026 6.61092 1.83527 6.69985C1.64029 6.78878 1.46782 6.92043 1.33062 7.08507C1.19343 7.2497 1.09503 7.44309 1.04272 7.65091C0.990414 7.85873 0.98553 8.07566 1.02843 8.28562L2.59986 16.1428C2.66665 16.4703 2.84618 16.764 3.10721 16.9729C3.36824 17.1817 3.69423 17.2924 4.02843 17.2856H15.9713C16.3055 17.2924 16.6315 17.1817 16.8925 16.9729C17.1535 16.764 17.3331 16.4703 17.3999 16.1428L18.9713 8.28562C19.0142 8.07566 19.0093 7.85873 18.957 7.65091C18.9047 7.44309 18.8063 7.2497 18.6691 7.08507C18.5319 6.92043 18.3594 6.78878 18.1645 6.69985C17.9695 6.61092 17.757 6.567 17.5427 6.57134Z"
+                                stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12.8572 1.57153L15.7143 6.57153" stroke="white" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.28564 6.57153L7.14279 1.57153" stroke="white" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></a>
+                </div>
+            </div>
+
+
+
+            <div class="header__bottom">
+                <div class="header__bottom-content layout">
+                    <div class="header__bottom-menu">
+                        <ul class="header__bottom-menu-list">
+                            <li class="header__bottom-menu-list-item">
+                                <button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
+                                    Спальня
+                                </button>
+                            </li>
+                            <li class="header__bottom-menu-list-item">
+                                <button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
+                                    Гостиная
+                                </button>
+                            </li>
+                            <li class="header__bottom-menu-list-item">
+                                <button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
+                                    Кухня
+                                </button>
+                            </li>
+                            <li class="header__bottom-menu-list-item">
+                                <button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
+                                    Для дома
+                                </button>
+                            </li>
+                            <li class="header__bottom-menu-list-item">
+                                <button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
+                                    Детская мебель
+                                </button>
+                            </li>
+                            <li class="header__bottom-menu-list-item">
+                                <button class="header__bottom-menu-list-item-button text-hover-acc js-header-cats">
+                                    Декор
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__bottom-wrapper">
+                        <div class="header__bottom-cards js-header-cards">
+                            <h2 class="header__bottom-cards-subtitle title-2">
+                                Спальня
+                            </h2>
+                            <ul class="header__bottom-cards-list">
+                                <li class="header__bottom-cards-list-item">
+                                    <a href="#" class="header__bottom-cards-list-item-link">
+                                        <span class="header__bottom-cards-pic">
+                                            <img class="header__bottom-cards-pic-img"
+                                                src="/images/header-cards-pic-1.jpg" alt="">
+                                        </span>
+                                        <span class="header__bottom-cards-text text">
+                                            Столы
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-2.jpg"
+                                            alt="">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Стулья
+                                    </p>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-3.jpg"
+                                            alt="">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Кухонные островки
+                                    </p>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic-line">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Смотреть все
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__bottom-cards js-header-cards">
+                            <h2 class="header__bottom-cards-subtitle title-2">
+                                Гостиная
+                            </h2>
+                            <ul class="header__bottom-cards-list">
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-1.jpg"
+                                            alt="">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Столы
+                                    </p>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-2.jpg"
+                                            alt="">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Стулья
+                                    </p>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-3.jpg"
+                                            alt="">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Кухонные островки
+                                    </p>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic-line">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Смотреть все
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__bottom-cards active js-header-cards">
+                            <h2 class="header__bottom-cards-subtitle title-2">
+                                Кухня
+                            </h2>
+                            <ul class="header__bottom-cards-list">
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-1.jpg"
+                                            alt="">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Столы
+                                    </p>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-2.jpg"
+                                            alt="">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Стулья
+                                    </p>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-3.jpg"
+                                            alt="">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Кухонные островки
+                                    </p>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic-line">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Смотреть все
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__bottom-cards js-header-cards">
+                            <h2 class="header__bottom-cards-subtitle title-2">
+                                Для дома
+                            </h2>
+                            <ul class="header__bottom-cards-list">
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-1.jpg"
+                                            alt="">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Столы
+                                    </p>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-2.jpg"
+                                            alt="">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Стулья
+                                    </p>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-3.jpg"
+                                            alt="">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Кухонные островки
+                                    </p>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic-line">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Смотреть все
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__bottom-cards js-header-cards">
+                            <h2 class="header__bottom-cards-subtitle title-2">
+                                Детская мебель
+                            </h2>
+                            <ul class="header__bottom-cards-list">
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-1.jpg"
+                                            alt="">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Столы
+                                    </p>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-2.jpg"
+                                            alt="">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Стулья
+                                    </p>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-3.jpg"
+                                            alt="">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Кухонные островки
+                                    </p>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic-line">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Смотреть все
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__bottom-cards js-header-cards">
+                            <h2 class="header__bottom-cards-subtitle title-2">
+                                Декор
+                            </h2>
+                            <ul class="header__bottom-cards-list">
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-1.jpg"
+                                            alt="">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Столы
+                                    </p>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-2.jpg"
+                                            alt="">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Стулья
+                                    </p>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic">
+                                        <img class="header__bottom-cards-pic-img" src="/images/header-cards-pic-3.jpg"
+                                            alt="">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Кухонные островки
+                                    </p>
+                                </li>
+                                <li class="header__bottom-cards-list-item">
+                                    <div class="header__bottom-cards-pic-line">
+                                    </div>
+                                    <p class="header__bottom-cards-text text">
+                                        Смотреть все
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="header__bottom-cards-btn js-header-bottom-btn">
+                        <div class="header__bottom-cards-btn-pic">
+                            <img class="header__bottom-cards-btn-pic-svg" src="/images/header-x.svg" alt="">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="bar">
+            <ul class="bar__list">
+                <li class="bar__list-item">
+                    <a href="/" class="bar__list-item-link">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.714355 10.0001L10.0001 0.714355L19.2858 10.0001" stroke="#070605"
+                                stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.57153 12.1428V19.2857H16.4287V12.1428" stroke="#070605" stroke-width="1.42857"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="bar__list-item">
+                    <button type="button" class="bar__list-item-btn bar__list-item-btn--menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </li>
+                <li class="bar__list-item">
+                    <a href="/" class="bar__list-item-link">
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.4284 7.14268C14.4284 10.6998 7.99986 19.2855 7.99986 19.2855C7.99986 19.2855 1.57129 10.6998 1.57129 7.14268C1.57129 5.43772 2.24858 3.80259 3.45417 2.597C4.65976 1.39141 6.2949 0.714111 7.99986 0.714111C9.70482 0.714111 11.34 1.39141 12.5455 2.597C13.7511 3.80259 14.4284 5.43772 14.4284 7.14268Z"
+                                stroke="#070605" stroke-width="1.42857" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M7.99979 9.28571C9.18326 9.28571 10.1426 8.32632 10.1426 7.14286C10.1426 5.95939 9.18326 5 7.99979 5C6.81632 5 5.85693 5.95939 5.85693 7.14286C5.85693 8.32632 6.81632 9.28571 7.99979 9.28571Z"
+                                stroke="#070605" stroke-width="1.42857" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="bar__list-item">
+                    <a href="/" class="bar__list-item-link">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.0001 0.714357C8.32041 0.71488 6.67235 1.17098 5.23142 2.03409C3.79048 2.8972 2.61064 4.13498 1.81755 5.61561C1.02446 7.09623 0.647828 8.76425 0.727769 10.442C0.807709 12.1198 1.34123 13.7444 2.2715 15.1429L0.714355 19.2858L5.92864 18.3429C7.18422 18.9565 8.5621 19.2787 9.95957 19.2857C11.357 19.2926 12.738 18.984 13.9996 18.3829C15.2612 17.7818 16.3709 16.9037 17.2459 15.814C18.1209 14.7244 18.7386 13.4513 19.0531 12.0897C19.3676 10.728 19.3707 9.31296 19.0621 7.94997C18.7536 6.58697 18.1414 5.31119 17.2712 4.21774C16.4009 3.12428 15.2951 2.24134 14.0362 1.63474C12.7772 1.02814 11.3976 0.713532 10.0001 0.714357Z"
+                                stroke="#070605" stroke-width="1.42857" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <main class="main">
+            <section class="poster poster-var1">
+                <div class="poster__pic">
+                    <img class="poster__pic-img" src="images/about-us-poster.jpg" alt="">
+                </div>
+                <div class="poster__block layout">
+                    <h1 class="poster__block-subtitle title">О нас</h1>
+                </div>
+            </section>
+            <section class="section-text--var2 layout">
+                <ul class="section-text__block">
+                    <li class="section-text__block-1">
+                        <h2 class="title-2">
+                            Наша миссия
+                        </h2>
+                    </li>
+                    <li class="section-text__block-2">
+                        <p class="text">
+                            Мы выбираем лучшие модели итальянской мебели и привозим их в Россию, чтобы вы создавали
+                            уютный дом мечты, наполненный качественной и стильной мебелью
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section class="section-text layout">
+                <ul class="section-text__block">
+                    <li class="section-text__block-1">
+                        <h2 class="title-2">
+                            История создания
+                        </h2>
+                    </li>
+                    <li class="section-text__block-2">
+                        <p class="text">
+                            Наш бренд существует уже 20 лет. За это время мы проделали длинный и интересный путь
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section class="section-content layout">
+                <ul class="section-content__block">
+                    <li class="section-content__block-1">
+                        <h2 class="section-content__block-1-subtitle title-2">
+                            2003
+                        </h2>
+                        <div class="section-content__block-1-box">
+                            <div class="section-content__block-1-box-line">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="section-content__block-2">
+                        <p class="section-content__block-2-text text">
+                            Открыт первый интернет-магазин. Мы находились в активном поиске брендов для сотрудничества
+                        </p>
+                    </li>
+                </ul>
+                <div class="section-content__pic">
+                    <img class="section-content__pic-img" src="images/about-us-pic-1.jpg" alt="">
+                </div>
+            </section>
+            <section class="section-content layout">
+                <ul class="section-content__block">
+                    <li class="section-content__block-1">
+                        <h2 class="section-content__block-1-subtitle title-2">
+                            2008
+                        </h2>
+                        <div class="section-content__block-1-box">
+                            <div class="section-content__block-1-box-line">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="section-content__block-2">
+                        <p class="section-content__block-2-text text">
+                            Влюбляемся в итальянский бренд Foppapedretti и становимся его официальным представителем в
+                            РФ
+                        </p>
+                    </li>
+                </ul>
+                <div class="section-content__pic">
+                    <img class="section-content__pic-img" src="images/about-us-pic-2.jpg" alt="">
+                </div>
+            </section>
+            <section class="section-content layout">
+                <ul class="section-content__block">
+                    <li class="section-content__block-1">
+                        <h2 class="section-content__block-1-subtitle title-2">
+                            2021
+                        </h2>
+                        <div class="section-content__block-1-box">
+                            <div class="section-content__block-1-box-line">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="section-content__block-2">
+                        <p class="section-content__block-2-text text">
+                            Становимся официальным представителем известной итальянской фабрики Noctis -производителя
+                            кроватей
+                        </p>
+                    </li>
+                </ul>
+                <div class="section-content__pic">
+                    <img class="section-content__pic-img" src="images/about-us-pic-3.jpg" alt="">
+                </div>
+            </section>
+            <section class="section-content layout">
+                <ul class="section-content__block">
+                    <li class="section-content__block-1">
+                        <h2 class="section-content__block-1-subtitle title-2">
+                            2022
+                        </h2>
+                        <div class="section-content__block-1-box">
+                            <div class="section-content__block-1-box-line">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="section-content__block-2">
+                        <p class="section-content__block-2-text text">
+                            Расширяем ассортимент и теперь в наших салонах и интернет-магазине доступны такие бренды как
+                            Tomasella, InCanto, Sedit
+                        </p>
+                    </li>
+                </ul>
+                <div class="section-content__pic">
+                    <img class="section-content__pic-img" src="images/about-us-pic-4.jpg" alt="">
+                </div>
+            </section>
+            <section class="section-text--var3 layout">
+                <ul class="section-text__block">
+                    <li class="section-text__block-1">
+                        <h2 class="title-2">
+                            Стабильные поставки мебели и аксессуаров для дома
+                        </h2>
+                    </li>
+                    <li class="section-text__block-2">
+                        <p class="text">
+                            Италия по-прежнему доступна для заказа с помощью IdeeCasa, сделав выбор в нашу пользу, вы
+                            получите качественную мебель по доступным ценам и приятные эмоции от нашего сервиса
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section class="section-content-pic">
+                <div class="section-content__pic-2">
+                    <img class="section-content__pic-2-img" src="images/about-us-poster.jpg" alt="">
+                </div>
+            </section>
+            <section class="section-content-2 layout">
+                <ul class="section-content-2__block">
+                    <li class="section-content-2__block-1">
+                        <div class="section-content-2__block-1-pic">
+                            <img class="section-content-2__block-1-pic-img" src="images/about-us-icon-1.svg" alt="">
+                        </div>
+                        <p class="section-content-2__block-1-text text">
+                            Уютная атмосфера в салонах и чашечка ароматного кофе для наших клиентов
+                        </p>
+                    </li>
+                    <li class="section-content-2__block-1">
+                        <div class="section-content-2__block-1-pic">
+                            <img class="section-content-2__block-1-pic-img" src="images/about-us-icon-2.svg" alt="">
+                        </div>
+                        <p class="section-content-2__block-1-text text">
+                            Профессиональные дизайнеры-консультанты помогут с выбором мебели
+                        </p>
+                    </li>
+                    <li class="section-content-2__block-1">
+                        <div class="section-content-2__block-1-pic">
+                            <img class="section-content-2__block-1-pic-img" src="images/about-us-icon-3.svg" alt="">
+                        </div>
+                        <p class="section-content-2__block-1-text text">
+                            Опция хранения мебели на складе компании и вывоз старой мебели
+                        </p>
+                    </li>
+                </ul>
+                <ul class="section-content-2__block">
+                    <li class="section-content-2__block-1">
+                        <div class="section-content-2__block-1-pic">
+                            <img class="section-content-2__block-1-pic-img" src="images/about-us-icon-4.svg" alt="">
+                        </div>
+                        <p class="section-content-2__block-1-text text">
+                            Опытные водители бережно доставят товар и сделают качественную сборку товара
+                        </p>
+                    </li>
+                    <li class="section-content-2__block-1">
+                        <div class="section-content-2__block-1-pic">
+                            <img class="section-content-2__block-1-pic-img" src="images/about-us-icon-5.svg" alt="">
+                        </div>
+                        <p class="section-content-2__block-1-text text">
+                            Удобное расположение салонов мебели, работаем на выходных и в праздничные дни
+                        </p>
+                    </li>
+                    <li class="section-content-2__block-1">
+                        <div class="section-content-2__block-1-pic">
+                            <img class="section-content-2__block-1-pic-img" src="images/about-us-icon-6.svg" alt="">
+                        </div>
+                        <p class="section-content-2__block-1-text text">
+                            Бесплатная парковка около наших мебельных салонов в Москве
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section class="section-application">
+                <ul class="section-application__block layout">
+                    <li class="section-application__block-1">
+                        <h2 class="title-2-white">
+                            Подберем идеальную мебель
+                            и декор для вашего дома
+                        </h2>
+                    </li>
+                    <li class="section-application__block-2">
+                        <p class="section-application__block-2-text text-white">
+                            Поможем сменить обстановку, подобрать мебель для всей квартиры под ваш стиль или выбрать
+                            подходящий декор
+                        </p>
+                        <p class="section-application__block-2-text text-white">
+                            Наши дизайнеры создадут гармоничную подборку мебели под любой ваш запрос
+                        </p>
+                        <a class="section-application__block-2-button button button-1" href="#"> Оставить заявку </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+
+
+
+
+        <footer class="footer">
+            <div class="footer__body layout">
+                <div class="footer__body-info">
+                    <div class="footer__body-info-top">
+                        <div class="footer__body-info-top-pic">
+                            <img class="footer__body-info-top-pic-img" src="images/logo-white.svg" alt="">
+                        </div>
+                        <div class="footer__body-info-top-contacts">
+                            <div class="footer__body-info-top-contacts-call">
+                                <a class="footer__body-info-top-contacts-text title-4-bold" href="tel:+74951721524">
+                                    +7 (495) 172 15 24</a>
+                            </div>
+                            <div class="footer__body-info-top-contacts-email">
+                                <a class="footer__body-info-top-contacts-text title-4-bold"
+                                    href="mailto:info@ideecasainterior.ru"> info@ideecasainterior.ru </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__body-info-bottom">
+                        <div class="footer__body-info-bottom-content">
+                            <p
+                                class="text footer__body-info-bottom-content-text footer__body-info-bottom-content-text--var2">
+                                Пн - Вс 10:00 - 21:00
+                            </p>
+                            <p class="text footer__body-info-bottom-content-text">
+                                г. Москва , Щипковский переулок, 4
+                            </p>
+                            <p class="text footer__body-info-bottom-content-text">
+                                ТЦ Mobel Expo, Нахимовский проспект 24
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="footer__body-columns">
+                    <li class="footer__body-columns-block footer__body-columns-block--1">
+                        <ul class="footer__body-columns-list">
+                            <li class="footer__body-columns-list-item">
+                                <h4 class="title-4-bold footer__body-columns-list-item-subtitle">
+                                    Каталог
+                                </h4>
+                                <a class="text footer__body-columns-list-item-text" href="#">
+                                    Спальня
+                                </a>
+                                <a class="text footer__body-columns-list-item-text" href="#">
+                                    Кухня и столовая
+                                </a>
+                                <a class="text footer__body-columns-list-item-text" href="#">
+                                    Гостиная
+                                </a>
+                                <a class="text footer__body-columns-list-item-text" href="#">
+                                    Для детей
+                                </a>
+                                <a class="text footer__body-columns-list-item-text" href="#">
+                                    Декор
+                                </a>
+                                <a class="text footer__body-columns-list-item-text" href="#">
+                                    Для дома
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__body-columns-block footer__body-columns-block--2">
+                        <ul class="footer__body-columns-list">
+                            <li class="footer__body-columns-list-item">
+                                <h4 class="title-4-bold footer__body-columns-list-item-subtitle">
+                                    О компании
+                                </h4>
+                                <a class="text footer__body-columns-list-item-text" href="#">
+                                    О нас
+                                </a>
+                                <a class="text footer__body-columns-list-item-text" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__body-columns-block footer__body-columns-block--3">
+                        <ul class="footer__body-columns-list">
+                            <li class="footer__body-columns-list-item">
+                                <h4 class="title-4-bold footer__body-columns-list-item-subtitle">
+                                    Клиентам
+                                </h4>
+                                <a class="text footer__body-columns-list-item-text" href="#">
+                                    Где купить
+                                </a>
+                                <a class="text footer__body-columns-list-item-text" href="#">
+                                    Доставка и оплата
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__bottom layout">
+                <div class="footer__bottom-body">
+                    <div class="footer__bottom-body-content">
+                        <a class="text footer__bottom-body-content-link" href="#">
+                            Политика конфиденциальности
+                        </a>
+                        <a class="text footer__bottom-body-content-link" href="#">
+                            Пользовательское соглашение
+                        </a>
+                        <p class="text footer__bottom-body-content-text">
+                            © Ideecasa 2006-2023. Все права защищены.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

@@ -3,7 +3,7 @@
 
 <section class="poster poster-var1">
     <div class="poster__pic">
-        <img class="poster__pic-img" src="<?php echo ic_image_directory()?>contacts_poster.jpg" alt="">
+        <img class="poster__pic-img" src="/wp-content/uploads/2023/08/photo_2023-08-02-15.58.06.jpeg" alt="">
     </div>
     <div class="poster__block layout">
         <h1 class="poster__block-subtitle title">Контакты</h1>
@@ -43,10 +43,10 @@
                     <p class="contacts__list-item-block-column-text text">
                         10:00 - 21:00
                     </p>
-                    <a class="contacts__list-item-block-column-text call-email" href="tel:+71234567890">
-                        +7 (123) 456 78 90</a>
+                    <a class="contacts__list-item-block-column-text call-email" href="tel:	+7 495 790 41 74">
+                    +7 495 790 41 74</a>
                     <a class="contacts__list-item-block-column-text call-email"
-                        href="mailto:infotvin@ideecasa.ru"> infotvin@ideecasa.ru </a>
+                        href="mailto:ideecasa@mail.ru">ideecasa@mail.ru</a>
                     <a class="contacts__list-item-block-column-link button button-2-width" href="/where-buy">
                         Посмотреть на карте </a>
                 </li>
@@ -70,10 +70,11 @@
                     <p class="contacts__list-item-block-column-text text">
                         10:00 - 21:00
                     </p>
-                    <a class="contacts__list-item-block-column-text call-email" href="tel:+71234567890">
-                        +7 (123) 456 78 90 </a>
+                    <a class="contacts__list-item-block-column-text call-email" href="tel:	+7 966 333 08 80">
+                    +7 966 333 08 80</a>
                     <a class="contacts__list-item-block-column-text call-email"
-                        href="mailto:infoexpo@ideecasa.ru"> infoexpo@ideecasa.ru </a>
+                        href="mailto:nicolettimoscow@gmail.com">nicolettimoscow@gmail.com
+ </a>
                     <a class="contacts__list-item-block-column-link button button-2-width" href="/where-buy">
                         Посмотреть на карте </a>
                 </li>
@@ -115,7 +116,7 @@
                 </div>
                 <p class="text-white">
                     Почта директора:   <a class="section-text__block-2-email call-email-white"
-                        href="mailto:partner@ideecasa.ru"> feedback@ideecasa.ru </a>
+                        href="mailto:feedback@ideecasa.ru"> feedback@ideecasa.ru </a>
                 </p>
             </li>
         </ul>
@@ -135,8 +136,6 @@
             <h4 class="contacts__requisites-block-2-title title-4">
                 Елена Дмитриевна Применко
             </h4>
-            <a class="contacts__requisites-block-2-call call-email" href="tel:+71234567890">
-                +7 (123) 456 78 90 </a>
             <h4 class="contacts__requisites-block-2-title title-4">
                 ООО «Прима Дизайн Групп»
             </h4>

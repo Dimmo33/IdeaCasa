@@ -32,7 +32,10 @@
 
             &:hover &-text {
                 color: $accent;
-                transition: color 0.3s ease;
+            }
+
+            &-text.current {
+                color: $accent;
             }
 
             &-svg path {

@@ -6,7 +6,6 @@ const mapCard = document.querySelectorAll(".js-map-card")
 
 
 mapToggle.forEach((item, index) => {
-    console.log(item, index)
     item.addEventListener('click', () => {
         item.classList.add("active")
         console.log(mapFrame[index])

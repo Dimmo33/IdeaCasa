@@ -1,23 +1,21 @@
 .cats {
-	margin-bottom: 40px;
-	white-space: nowrap;
-	flex-wrap: nowrap;
-	overflow-x: scroll;
-	overflow-y: hidden;
-	scrollbar-width: none;
-	
+    margin-bottom: 10px;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
 
-	@media screen and (max-width: 920px) {
-		margin-bottom: 22px;
-	}
+    @media screen and (max-width: 920px) {
+        margin-bottom: 22px;
+    }
 
-	&__button {
-		margin-right: 12px;
-		cursor: pointer;
+    &__button {
+        margin-right: 12px;
+        cursor: pointer;
 
-
-		@media screen and (max-width: 920px) {
-			margin-right: 5px;
-		}
-	}
+        @media screen and (max-width: 920px) {
+            margin-right: 5px;
+        }
+    }
 }

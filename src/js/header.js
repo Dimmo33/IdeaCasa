@@ -43,7 +43,7 @@ if (header) {
     headerCats.forEach((item, index) => {
         console.log(item, index)
         if (window.innerWidth <= 920) {
-            item.addEventListener('click', () => {
+            item.addEventListener('click', (e) => {
                 // headerCats.forEach((clearItem) => {
                 //     if (clearItem.classList.contains("open")) {
                 //         clearItem.classList.remove("open")
@@ -54,6 +54,7 @@ if (header) {
                 //         clearItem.classList.remove("open")
                 //     }
                 // })
+                e.preventDefault()
                 headerCards[index].classList.add("open")
             });
         } else {
@@ -77,5 +78,13 @@ if (header) {
     const barBtn = document.querySelector(".bar__list-item-btn--menu")
     barBtn.addEventListener("click", () => {
         header.classList.toggle("open");
+    })
+
+    const searchBtn = document.querySelectorAll(".js-search-btn")
+    const searchContainer = document.querySelector(".js-sb")
+    searchBtn.forEach(btn => {
+        btn.addEventListener("click", () => {
+            searchContainer.classList.toggle("active")
+        })
     })
 }
