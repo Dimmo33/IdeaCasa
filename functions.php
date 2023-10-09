@@ -635,31 +635,6 @@ function ideecasa_pre_order_block() {
     <?php
 }
 
-
-add_filter( 'woocommerce_get_catalog_ordering_args', 'custom_woocommerce_get_catalog_ordering_args' );
-
-function custom_woocommerce_get_catalog_ordering_args( $args ) {
-    global $wp_query;
-	$orderby_value = isset( $_GET['orderby'] ) ? wc_clean( $_GET['orderby'] ) :
-		apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
-
-	if ( 'product_rating' == $orderby_value ) {
-		$args = [
-                'tax_query'      => array( array(
-                    'taxonomy'        => 'pa_brend',
-                    'field'           => 'slug',
-                    'terms'           =>  array('NICOLETTIHOME','NICOLETTI'),
-                    'operator'        => 'IN',
-                ) ),
-				'orderby' => [
-					'rk_quality'  => 'ASC',
-					'rk_rating' => 'DESC',
-				],
-		];
-	}
-
-	return $args;
-}
 add_filter( 'dgwt/wcas/product/thumbnail_src', function($src, $product_id) {
     $thumbnail_url = wp_get_attachment_image_src(get_post_thumbnail_id($product_id), 'full' );
     if ( is_array( $thumbnail_url ) && !empty( $thumbnail_url[0] ) ) {
@@ -667,3 +642,48 @@ add_filter( 'dgwt/wcas/product/thumbnail_src', function($src, $product_id) {
     }
     return $src;
   }, 10, 2);
+
+
+function update_brands_sort() {
+    // ////
+    $brands_sort = get_field('sort_brands', 'option');
+
+    $params = array(
+        'post_type' => 'product',
+        'posts_per_page' => 2000,
+    ); // (1)
+    $wc_query = new WP_Query($params);
+
+    if ($wc_query->have_posts()) {
+        $pr_count = 0;
+        while ( $wc_query->have_posts() ) {
+            $my_post = $wc_query->next_post();
+
+            $pr_count = $pr_count + 1;
+
+            $brand_attr = get_the_terms( $my_post->ID, 'pa_brend');
+            $brand_product_attr_id = $brand_attr[0]->term_id; // id брендв
+
+            if ($brand_attr) {
+                $brands_count = 0;
+
+                foreach ($brands_sort as $brand_id) {
+                    if ($brand_id == $brand_product_attr_id) {
+                        update_post_meta( $my_post->ID, 'brand_number', $brands_count );
+                    }
+
+                    $brands_count = $brands_count + 1;
+                }
+
+                if ($brands_count == 0) {
+                    update_post_meta( $my_post->ID, 'brand_number', 999 ); // установка конечного значения
+                }
+            }
+        }
+
+        echo $pr_count;
+
+        wp_reset_postdata();
+    }
+    // ////
+}

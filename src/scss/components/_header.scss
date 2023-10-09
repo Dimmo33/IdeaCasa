@@ -63,6 +63,7 @@
     &__logo {
         margin-right: 78px;
         height: 60px;
+        filter: invert(1);
 
         @media screen and (max-width: 920px) {
             width: 80px;
